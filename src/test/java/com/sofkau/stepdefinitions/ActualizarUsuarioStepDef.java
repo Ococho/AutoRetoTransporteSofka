@@ -6,6 +6,7 @@ import com.sofkau.setup.APISetup;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import io.cucumber.java.es.Y;
 import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import static com.sofkau.tasks.backend.EnviarPut.enviarPut;
 import static com.sofkau.util.Constantes.*;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
+import static org.hamcrest.Matchers.*;
 
 public class ActualizarUsuarioStepDef extends APISetup {
     private final Logger log = LoggerFactory.getLogger(ActualizarEnvioStepDef.class);
@@ -30,19 +32,19 @@ public class ActualizarUsuarioStepDef extends APISetup {
         }
     }
 
-    @Cuando("envio datos validos en el formulario")
-    public void envioDatosValidosEnElFormulario() {
+    @Cuando("modifico los datos rol de usuario {int}, nombres {string}, dni {string}, correo {string}, contrasenna {string} y telefono {string} del usuario {string}")
+    public void modificoLosDatosRolDeUsuarioNombresDniCorreoContrasennaYTelefonoDelUsuario(Integer rol, String nombres, String dni, String correo, String contrasenna, String telefono, String usuario) {
         try {
-//            Usuario actualizarUsuario = new Usuario();
-//            actualizarUsuario.setRol(0);
-//            actualizarUsuario.setNombres(0);
-//            actualizarUsuario.setDni(0);
-//            actualizarUsuario.setCorreo(0);
-//            actualizarUsuario.setContrasenna(0);
-//            actualizarUsuario.setTelefono(0);
-//            actor.attemptsTo(
-//                    enviarPut().alRecurso(API_URL_ACTUALIZAR_USUARIO + envio).yConElCuerpo(envioAModificar)
-//            );
+            Usuario actualizarUsuario = new Usuario();
+            actualizarUsuario.setRol(rol);
+            actualizarUsuario.setNombres(nombres);
+            actualizarUsuario.setDni(dni);
+            actualizarUsuario.setCorreo(correo);
+            actualizarUsuario.setContrasenna(contrasenna);
+            actualizarUsuario.setTelefono(telefono);
+            actor.attemptsTo(
+                    enviarPut().alRecurso(API_URL_ACTUALIZAR_USUARIO + usuario).yConElCuerpo(actualizarUsuario)
+            );
             log.info("Se envió la petición PUT");
         } catch (Exception e) {
             log.error("ERROR");
@@ -52,12 +54,12 @@ public class ActualizarUsuarioStepDef extends APISetup {
         }
     }
 
-    @Entonces("vere el codigo de estado <{int}>")
-    public void vereElCodigoDeEstado(int arg0) {
+    @Entonces("vere el codigo de estado {int}")
+    public void vereElCodigoDeEstado(Integer codigo) {
         try {
             actor.should(
-//                    seeThatResponse("Código de modificación OK",
-//                            response -> response.statusCode(codigo))
+                    seeThatResponse("Código de modificación OK",
+                            response -> response.statusCode(codigo))
             );
             log.info("Código 200 OK recibido");
         } catch (Exception e) {
@@ -68,39 +70,35 @@ public class ActualizarUsuarioStepDef extends APISetup {
         }
     }
 
-    @Cuando("envio informacion invalida en el formulario")
-    public void envioInformacionInvalidaEnElFormulario() {
-        try {
-//            Envio envioAModificar = new Envio();
-//            envioAModificar.setUsuarioId(usuario);
-//            envioAModificar.setOrigen(origen);
-//            envioAModificar.setDestino(destino);
-//            envioAModificar.setPeso(peso);
-//            actor.attemptsTo(
-//                    enviarPut().alRecurso(API_URL_ACTUALIZAR_ENVIO + envio).yConElCuerpo(envioAModificar)
-//            );
-            log.info("Se envió la petición PUT");
-        } catch (Exception e) {
-            log.error("ERROR");
-            log.error(e.getMessage());
-            log.error(String.valueOf(e.getCause()));
-            Assertions.fail();
-        }
-    }
-
-    @Entonces("vere un codigo de estado <{int}>")
-    public void vereUnCodigoDeEstado(int arg0) {
+    @Y("los campos admitidos seran validos")
+    public void losCamposAdmitidosSeranValidos() {
         try {
             actor.should(
-//                    seeThatResponse("Código de modificación OK",
-//                            response -> response.statusCode(codigo))
+                    seeThatResponse("Ver información modificada",
+                            response -> response
+                                    .body("_id", matchesRegex("^[a-zA-Z0-9]+$"))
+                                    .body("contrasenna", matchesRegex("^[a-zA-Z0-9]+$"))
+                                    .body("nombres", isA(String.class))
+                                    .body("nombres", matchesRegex("^[a-zA-Z]+$"))
+                                    .body("apellidos", isA(String.class))
+                                    .body("apellidos", matchesRegex("^[a-zA-Z]+$"))
+                                    .body("dni", matchesRegex("^[a-zA-Z0-9]+$"))
+                                    .body("correo", matchesRegex("^[a-zA-Z0-9\\-._]+@[a-zA-Z._]+\\.[a-zA-Z]{2,3}$"))
+                                    .body("telefono", isA(String.class))
+                                    .body("telefono", matchesRegex("^[0-9]+$"))
+                                    .body("rol", equalTo(0))
+                                    .body("nombreUsuario", isA(String.class))
+                                    .body("nombreUsuario", matchesRegex("^[a-zA-Z]+$"))
+                    )
             );
-            log.info("Código 200 OK recibido");
+            log.info("Usuario actualizado");
         } catch (Exception e) {
             log.error("ERROR");
             log.error(e.getMessage());
             log.error(String.valueOf(e.getCause()));
             Assertions.fail();
+        } finally {
+            log.info("Test completado");
         }
     }
 }
