@@ -13,9 +13,9 @@ Característica: Crear solicitud de envío
   @SolicitudGeneradaExitosa
   Escenario: Solicitud de carga generada
     Cuando mis datos de carga enviados son validos
-    Entonces visualizare un codigo de estado nnn
+    Entonces visualizare el codigo de estado <201>
 
   @DatosInvalidos
   Escenario: Datos inválidos en la solicitud
     Cuando mis datos de carga enviados son invalidos
-    Entonces visualizare un codigo de estado nn
+    Entonces visualizare un codigo de estado <400>
