@@ -13,9 +13,9 @@ Característica: Actualizar datos de una cuenta
   @ModificacionExitosa
   Escenario: Modificación de información exitosa
     Cuando envio datos validos en el formulario
-    Entonces visualizare un codigo de estado nnn
+    Entonces vere el codigo de estado <200>
 
   @IngresoDatosNoValidos
   Escenario: Ingreso de datos no válidos
     Cuando envio informacion invalida en el formulario
-    Entonces visualizare un codigo de estado nnnn
+    Entonces vere un codigo de estado <400>
