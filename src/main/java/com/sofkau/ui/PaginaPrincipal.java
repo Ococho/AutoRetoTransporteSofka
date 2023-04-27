@@ -6,5 +6,5 @@ import org.openqa.selenium.By;
 
 public class PaginaPrincipal extends PageObject {
     public static Target BIENVENIDA = Target.the("Mensaje bienvenida")
-            .located(By.xpath("//h1[contains(@class,'fw-normal')]"));
+            .located(By.xpath("//h1[@class='mat-headline-2']"));
 }
