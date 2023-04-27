@@ -19,4 +19,8 @@ public class PaginaIniciarSesion extends PageObject {
 
     public static Target MENSAJE_CONFIRMACION = Target.the("Mensaje de confirmación de registro")
             .located(By.xpath("//div[contains(@class,'toast-title')]"));
+
+    public static Target TEXTO_INICIO_SESION = Target.the("Texto inicio de sesión")
+            .located(By.xpath("//mat-card-title[@class='mat-mdc-card-title card-title-text']"));
+
 }

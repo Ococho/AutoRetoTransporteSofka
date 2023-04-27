@@ -10,4 +10,7 @@ public class PaginaPrincipal extends PageObject {
 
     public static Target USUARIO = Target.the("Nombre del usuario")
             .located(By.cssSelector(".navbar-nombreUsuario-text"));
+
+    public static Target BOTON_CONVERTIRSE_CONDUCTOR = Target.the("Botón convertirse en conductor")
+            .located(By.xpath("//a[@routerlink='/usuario/ser-conductor']"));
 }
