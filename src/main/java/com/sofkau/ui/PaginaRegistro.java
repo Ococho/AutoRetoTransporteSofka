@@ -22,4 +22,7 @@ public class PaginaRegistro extends PageObject {
 
     public static Target BOTON_REGISTRARSE = Target.the("Botón Registrar Usuario")
             .located(By.xpath("(//button[@type='submit'])[1]"));
+
+    public static Target MENSAJE_ERROR = Target.the("Mensaje de error en campos")
+            .located(By.cssSelector("div.error-list>div:nth-child(1)"));
 }

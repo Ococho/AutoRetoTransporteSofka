@@ -13,14 +13,15 @@ Característica: Registrar usuario
   @RegistroExitoso
   Escenario: Registro de usuario exitoso
     Cuando ingreso datos de registro validos
-    Entonces sere redirigido al area de usuario
+    Entonces sere redirigido al area de inicio de sesion
 
-  @RegistroInvalidoPorInformacion
-  Escenario: Registro de usuario inválido
-    Cuando ingreso informacion invalida
-    Entonces recibire un mensaje que me indica que la informacion ingresada es invalida
-
-  @RegistroInvalidoPorCredenciales
-  Escenario: Registro de usuario fallido
-    Cuando ingreso una contrasenna que no coincide
-    Entonces recibire un mensaje indicando que las contrasennas no coinciden
+  @RegistroInvalido
+  Esquema del escenario: Registro de usuario inválido
+    Cuando ingreso mis nombres '<nombres>', apellidos '<apellidos>', correo '<correo>', contrasenna '<contrasenna>' con su confirmacion '<cContrasenna>'
+    Entonces recibire un mensaje '<mensaje>' que me indica que la informacion ingresada es invalida
+    Ejemplos:
+      | nombres | apellidos | correo               | contrasenna | cContrasenna | mensaje                 |
+      | 1!%^$#  | Vargas    | ron.vargas@gmail.com | vargas123   | vargas123    | Dato no válido!         |
+      | Ron     | $67^$#    | ron.vargas@gmail.com | vargas123   | vargas123    | Dato no válido!         |
+      | Ron     | Vargas    | ron.vargasgmail.com  | vargas123   | vargas123    | Dato no válido!         |
+      | Ron     | Vargas    | ron.vargas@gmail.com | vargas123   | 123vargas    | Contraseña no coincide! |

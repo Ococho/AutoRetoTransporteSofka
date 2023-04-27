@@ -5,10 +5,13 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import java.util.Locale;
 
+import static com.sofkau.ui.PaginaIniciarSesion.MENSAJE_CONFIRMACION;
 import static com.sofkau.ui.PaginaRegistro.*;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isPresent;
 
 public class RegistrarUsuario implements Task {
     private static final Faker faker = new Faker(new Locale("es-MX"));
@@ -22,7 +25,8 @@ public class RegistrarUsuario implements Task {
                 Enter.theValue(faker.internet().emailAddress()).into(CORREO),
                 Enter.theValue(contrasenna).into(CONTRASENNA),
                 Enter.theValue(contrasenna).into(C_CONTRASENNA),
-                Click.on(BOTON_REGISTRARSE)
+                Click.on(BOTON_REGISTRARSE),
+                WaitUntil.the(MENSAJE_CONFIRMACION, isPresent())
         );
     }
 
