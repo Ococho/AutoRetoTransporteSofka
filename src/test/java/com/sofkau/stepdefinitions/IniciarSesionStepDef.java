@@ -59,7 +59,7 @@ public class IniciarSesionStepDef extends WebSetup {
     public void visualizareUnMensajeDeBienvenidaConMiNombre() {
         try {
             theActorInTheSpotlight().should(
-                    seeThat(iniciarSesionMensaje(), equalTo("Bienvenido a su Transportadora")),
+                    seeThat(iniciarSesionMensaje(), equalTo("... te llevamos a donde tu quieras ...")),
                     seeThat(usuarioMensaje(), isA(String.class))
             );
             log.info("Test pasado");

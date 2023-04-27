@@ -16,4 +16,7 @@ public class PaginaIniciarSesion extends PageObject {
 
     public static Target MENSAJE_ERROR_CONTRASENNA = Target.the("Mensaje de error de la contraseña")
             .located(By.cssSelector("div.error-list>div:nth-child(1)"));
+
+    public static Target MENSAJE_CONFIRMACION = Target.the("Mensaje de confirmación de registro")
+            .located(By.xpath("//div[contains(@class,'toast-title')]"));
 }
