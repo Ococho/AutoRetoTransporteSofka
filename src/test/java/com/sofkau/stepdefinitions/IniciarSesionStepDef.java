@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static com.sofkau.questions.frontend.ContrasennaInvalidaMensaje.contrasennaInvalidaMensaje;
+import static com.sofkau.questions.frontend.IniciarSesionMensaje.iniciarSesionMensaje;
+import static com.sofkau.questions.frontend.UsuarioMensaje.usuarioMensaje;
 import static com.sofkau.tasks.frontend.AbrirPaginaInicial.abrirPaginaInicial;
 import static com.sofkau.tasks.frontend.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.frontend.IrAIniciarSesion.irAIniciarSesion;
@@ -37,10 +39,46 @@ public class IniciarSesionStepDef extends WebSetup {
         }
     }
 
+    @Cuando("ingreso credenciales validas")
+    public void ingresoCredencialesValidas() {
+        try {
+            log.info("Llenando formulario válido");
+            theActorInTheSpotlight().attemptsTo(
+                    iniciarSesion("maria@gmail.com", "maria123")
+            );
+        } catch (Exception e) {
+            log.error("ERROR");
+            log.error(e.getMessage());
+            log.error(String.valueOf(e.getCause()));
+            quitarControlador();
+            Assertions.fail();
+        }
+    }
+
+    @Entonces("visualizare un mensaje de bienvenida con mi nombre")
+    public void visualizareUnMensajeDeBienvenidaConMiNombre() {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(iniciarSesionMensaje(), equalTo("Bienvenido a su Transportadora")),
+                    seeThat(usuarioMensaje(), isA(String.class))
+            );
+            log.info("Test pasado");
+        } catch (Exception e) {
+            log.error("ERROR");
+            log.error(e.getMessage());
+            log.error(String.valueOf(e.getCause()));
+            quitarControlador();
+            Assertions.fail();
+        } finally {
+            log.info("Test completado");
+            quitarControlador();
+        }
+    }
+
     @Cuando("ingreso el usuario {string} con la contrasenna {string}")
     public void ingresoElUsuarioCorreoConLaContrasennaContrasenna(String correo, String contrasenna) {
         try {
-            log.info("Llenando formulario válido");
+            log.info("Llenando de formulario invalido");
             theActorInTheSpotlight().attemptsTo(
                     iniciarSesion(correo, contrasenna)
             );
@@ -59,7 +97,7 @@ public class IniciarSesionStepDef extends WebSetup {
             theActorInTheSpotlight().should(
                     seeThat(contrasennaInvalidaMensaje(), equalTo(mensaje))
             );
-
+            log.info("Test pasado");
         } catch (Exception e) {
             log.error("ERROR");
             log.error(e.getMessage());
@@ -67,6 +105,7 @@ public class IniciarSesionStepDef extends WebSetup {
             quitarControlador();
             Assertions.fail();
         } finally {
+            log.info("Test completado");
             quitarControlador();
         }
     }

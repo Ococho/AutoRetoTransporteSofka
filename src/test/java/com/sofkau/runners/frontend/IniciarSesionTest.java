@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features/frontend"},
         glue = {"com.sofkau.stepdefinitions"},
-        tags = "@InicioSesionInvalido"
+        tags = "@InicioSesionInvalido or @InicioSesionValido"
 )
 public class IniciarSesionTest {
 }
