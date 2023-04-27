@@ -7,14 +7,15 @@ Característica: Inicio de sesión
   Quiero iniciar sesión
   Para poder ingresar a los servicios de la aplicación
 
-  @InicioSesion
-  Esquema del escenario: Inicio de sesión
+  @InicioSesionInvalido
+  Esquema del escenario: Inicio de sesión inválido
     Dado que estoy en la pagina de login
-    Cuando ingreso el usuario <usuario> con la contrasenna <contrasenna>
-    Entonces visualizare un mensaje de <mensaje>
+    Cuando ingreso el usuario '<correo>' con la contrasenna '<contrasenna>'
+    Entonces visualizare un mensaje de error '<mensaje>'
 
     Ejemplos:
-      | usuario | contrasenna | mensaje |
-      |         |             |         |
-      |         |             |         |
-      |         |             |         |
+      | correo          | contrasenna | mensaje              |
+      #| m@gmail.com     | maria123    |                      |
+      #| maria@gmail.com | m           |                      |
+      | maria@gmail.com |             | No debe estar vacio! |
+      |                 | maria123    | No debe estar vacio! |
