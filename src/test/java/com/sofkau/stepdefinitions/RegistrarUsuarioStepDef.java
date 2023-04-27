@@ -8,10 +8,15 @@ import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.sofkau.questions.frontend.CamposInvalidosMensaje.camposInvalidosMensaje;
+import static com.sofkau.questions.frontend.ConfirmacionRegistroMensaje.confirmacionRegistroMensaje;
 import static com.sofkau.tasks.frontend.AbrirPaginaInicial.abrirPaginaInicial;
 import static com.sofkau.tasks.frontend.IrARegistro.irARegistro;
 import static com.sofkau.tasks.frontend.RegistrarUsuario.registrarUsuario;
+import static com.sofkau.tasks.frontend.RegistrarUsuarioInvalido.registrarUsuarioInvalido;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.CoreMatchers.*;
 
 public class RegistrarUsuarioStepDef extends WebSetup {
     private final Logger log = LoggerFactory.getLogger(RegistrarUsuarioStepDef.class);
@@ -50,34 +55,57 @@ public class RegistrarUsuarioStepDef extends WebSetup {
         }
     }
 
-    @Entonces("sere redirigido al area de usuario")
-    public void sereRedirigidoAlAreaDeUsuario() {
-//        try {
-//            log.info("Código 200 OK recibido");
-//        } catch (Exception e) {
-//            log.error("ERROR");
-//            log.error(e.getMessage());
-//            log.error(String.valueOf(e.getCause()));
-//            quitarControlador();
-//            Assertions.fail();
-//        } finally {
-//            quitarControlador();
-//        }
+    @Entonces("sere redirigido al area de inicio de sesion")
+    public void sereRedirigidoAlAreaDeInicioDeSesion() {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(confirmacionRegistroMensaje(), containsString("Registro exitoso!"))
+            );
+            log.info("Test pasado");
+        } catch (Exception e) {
+            log.error("ERROR");
+            log.error(e.getMessage());
+            log.error(String.valueOf(e.getCause()));
+            quitarControlador();
+            Assertions.fail();
+        } finally {
+            log.info("Test completado");
+            quitarControlador();
+        }
     }
 
-    @Cuando("ingreso informacion invalida")
-    public void ingresoInformacionInvalida() {
+    @Cuando("ingreso mis nombres {string}, apellidos {string}, correo {string}, contrasenna {string} con su confirmacion {string}")
+    public void ingresoMisNombresApellidosCorreoContrasennaConSuConfirmacion(String nombres, String apellidos, String correo, String contrasenna, String cContrasenna) {
+        try {
+            log.info("Llenando formulario inválido");
+            theActorInTheSpotlight().attemptsTo(
+                    registrarUsuarioInvalido(nombres, apellidos, correo, contrasenna, cContrasenna)
+            );
+        } catch (Exception e) {
+            log.error("ERROR");
+            log.error(e.getMessage());
+            log.error(String.valueOf(e.getCause()));
+            quitarControlador();
+            Assertions.fail();
+        }
     }
 
-    @Entonces("recibire un mensaje que me indica que la informacion ingresada es invalida")
-    public void recibireUnMensajeQueMeIndicaQueLaInformacionIngresadaEsInvalida() {
-    }
-
-    @Cuando("ingreso una contrasenna que no coincide")
-    public void ingresoUnaContrasennaQueNoCoincide() {
-    }
-
-    @Entonces("recibire un mensaje indicando que las contrasennas no coinciden")
-    public void recibireUnMensajeIndicandoQueLasContrasennasNoCoinciden() {
+    @Entonces("recibire un mensaje {string} que me indica que la informacion ingresada es invalida")
+    public void recibireUnMensajeQueMeIndicaQueLaInformacionIngresadaEsInvalida(String mensaje) {
+        try {
+            theActorInTheSpotlight().should(
+                    seeThat(camposInvalidosMensaje(), equalTo(mensaje))
+            );
+            log.info("Test pasado");
+        } catch (Exception e) {
+            log.error("ERROR");
+            log.error(e.getMessage());
+            log.error(String.valueOf(e.getCause()));
+            quitarControlador();
+            Assertions.fail();
+        } finally {
+            log.info("Test completado");
+            quitarControlador();
+        }
     }
 }
