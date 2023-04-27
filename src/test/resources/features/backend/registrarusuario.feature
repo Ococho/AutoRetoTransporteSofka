@@ -13,14 +13,9 @@ Característica: Registrar usuario
   @RegistroExitoso
   Escenario: Registro de usuario exitoso
     Cuando envio datos de registro validos
-    Entonces visualizare un codigo de estado nnn
+    Entonces podre visualizar un codigo de estado <201>
 
   @RegistroInvalidoPorInformacion
   Escenario: Registro de usuario inválido
     Cuando envio informacion invalida
-    Entonces visualizare un codigo de estado nnnn
-
-  @RegistroInvalidoPorCredenciales
-  Escenario: Registro de usuario fallido
-    Cuando envio una contrasenna que no coincide
-    Entonces visualizare un codigo de estado nn
+    Entonces podre ver un codigo de estado <400>
