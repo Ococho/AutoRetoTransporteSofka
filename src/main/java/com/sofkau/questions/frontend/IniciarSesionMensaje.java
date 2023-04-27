@@ -1,4 +1,4 @@
-package com.sofkau.questions;
+package com.sofkau.questions.frontend;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

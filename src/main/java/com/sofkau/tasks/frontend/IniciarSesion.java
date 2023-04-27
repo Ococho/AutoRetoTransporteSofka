@@ -8,8 +8,8 @@ import net.serenitybdd.screenplay.actions.Enter;
 import static com.sofkau.ui.PaginaIniciarSesion.*;
 
 public class IniciarSesion implements Task {
-    private String correo;
-    private String contrasenna;
+    private final String correo;
+    private final String contrasenna;
 
     @Override
     public <T extends Actor> void performAs(T actor) {

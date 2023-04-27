@@ -75,18 +75,18 @@ public class ActualizarEnvioStepDef extends APISetup {
                     seeThatResponse("Ver información anterior",
                             response -> response
                                     .body("_id", matchesRegex("^[a-zA-Z0-9]+$"))
-                                    .body("usuarioId", matchesRegex("^[a-zA-Z]+$"))
+                                    .body("usuarioId", matchesRegex("^[a-zA-Z0-9]+$"))
                                     .body("fecha", isA(Long.class))
                                     .body("fecha", greaterThan(0L))
                                     .body("peso", isA(Integer.class))
                                     .body("peso", greaterThan(0))
                                     .body("origen", isA(String.class))
-                                    .body("origen", matchesRegex("^[a-zA-Z ]{3,50}$"))
+                                    .body("origen", matchesRegex("^(-?\\d+(\\.\\d+)?), (-?\\d+(\\.\\d+)?)$"))
                                     .body("destino", isA(String.class))
-                                    .body("destino", matchesRegex("^[a-zA-Z ]{3,50}$"))
+                                    .body("destino", matchesRegex("^(-?\\d+(\\.\\d+)?), (-?\\d+(\\.\\d+)?)$"))
                     )
             );
-            log.info("");
+            log.info("Envío actualizado");
         } catch (Exception e) {
             log.error("ERROR");
             log.error(e.getMessage());
