@@ -1,4 +1,5 @@
 # Transporte Sofka | Automatización aplicación web y APIs REST
+![My project-1 (1)](https://user-images.githubusercontent.com/96805772/235176144-4b50b41a-2ece-495e-abc2-ee56e5af71ed.png)
 
 ## **Requisitos**
 Para este proyecto, se necesitará:
