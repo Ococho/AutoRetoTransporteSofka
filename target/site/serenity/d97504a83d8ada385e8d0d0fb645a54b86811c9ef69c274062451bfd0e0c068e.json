@@ -1,0 +1,1514 @@
+{
+  "name": "Inicio de sesión inválido",
+  "id": "inicio-de-sesión;inicio-de-sesión-inválido",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "1: Inicio de sesión inválido ({correo\u003dmaria@gmail.com, contrasenna\u003d, mensaje\u003dNo debe estar vacio!})",
+      "duration": 18135,
+      "startTime": "2023-04-27T21:56:53.445-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "lineNumber": 25,
+      "children": [
+        {
+          "number": 2,
+          "description": "Dado que estoy en la pagina de login",
+          "duration": 9874,
+          "startTime": "2023-04-27T21:56:53.520-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "timeStamp": 1682650623394,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 3,
+              "description": "Visitante de transportes sofka abrir pagina inicial",
+              "duration": 4895,
+              "startTime": "2023-04-27T21:56:56.117-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                  "htmlSource": "pagesource4982191882039609566.html",
+                  "timeStamp": 1682650616472,
+                  "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                },
+                {
+                  "screenshot": "c0f4d1e5d3a1bf2d5179289939e9dfff04eedfd2b14e27e448d799f6f92dfcc8.png",
+                  "timeStamp": 1682650621012,
+                  "screenshotName": "c0f4d1e5d3a1bf2d5179289939e9dfff04eedfd2b14e27e448d799f6f92dfcc8.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 4,
+                  "description": "Visitante de Transportes Sofka opens the Pagina inicial",
+                  "duration": 3898,
+                  "startTime": "2023-04-27T21:56:56.480-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                      "htmlSource": "pagesource6743015810694792217.html",
+                      "timeStamp": 1682650616518,
+                      "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                    },
+                    {
+                      "screenshot": "ea00cdfa8d3c2480b16adfcc5f71f0d95e35c865de5f59727b255c617091130c.png",
+                      "timeStamp": 1682650620378,
+                      "screenshotName": "ea00cdfa8d3c2480b16adfcc5f71f0d95e35c865de5f59727b255c617091130c.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "description": "Visitante de transportes sofka ir a iniciar sesion",
+              "duration": 2324,
+              "startTime": "2023-04-27T21:57:01.027-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "c0f4d1e5d3a1bf2d5179289939e9dfff04eedfd2b14e27e448d799f6f92dfcc8.png",
+                  "htmlSource": "pagesource5255470710823160856.html",
+                  "timeStamp": 1682650621080,
+                  "screenshotName": "c0f4d1e5d3a1bf2d5179289939e9dfff04eedfd2b14e27e448d799f6f92dfcc8.png"
+                },
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "timeStamp": 1682650623350,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 6,
+                  "description": "Visitante de Transportes Sofka clicks on BotÃ³n de iniciar sesiÃ³n",
+                  "duration": 1793,
+                  "startTime": "2023-04-27T21:57:01.090-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "962550afd0a9847a26370fc8cbb6307fb22bf3a2788b46221481c98ad3b9cef4.png",
+                      "htmlSource": "pagesource7015955100618104751.html",
+                      "timeStamp": 1682650621649,
+                      "screenshotName": "962550afd0a9847a26370fc8cbb6307fb22bf3a2788b46221481c98ad3b9cef4.png"
+                    },
+                    {
+                      "screenshot": "9a28da151f2219930d72f97373c6fe36459ea9c2c0512bdef2fb03b8699729bb.png",
+                      "htmlSource": "pagesource4615139567922254743.html",
+                      "timeStamp": 1682650622861,
+                      "screenshotName": "9a28da151f2219930d72f97373c6fe36459ea9c2c0512bdef2fb03b8699729bb.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "description": "Cuando ingreso el usuario \u0027maria@gmail.com\u0027 con la contrasenna \u0027\u0027",
+          "duration": 5593,
+          "startTime": "2023-04-27T21:57:03.396-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "htmlSource": "pagesource3458772769677028095.html",
+              "timeStamp": 1682650623952,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            },
+            {
+              "screenshot": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png",
+              "timeStamp": 1682650628988,
+              "screenshotName": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 8,
+              "description": "Visitante de Transportes Sofka enters \u0027maria@gmail.com\u0027 into Campo de correo del usuario",
+              "duration": 1754,
+              "startTime": "2023-04-27T21:57:03.965-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "htmlSource": "pagesource8407389290855483749.html",
+                  "timeStamp": 1682650624433,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                },
+                {
+                  "screenshot": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png",
+                  "htmlSource": "pagesource3852173076725215800.html",
+                  "timeStamp": 1682650625159,
+                  "screenshotName": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png"
+                },
+                {
+                  "screenshot": "ece6f8c2c6190d51927c758356c6853876ecbb71bad1ba31ff6abba4e24116f4.png",
+                  "timeStamp": 1682650625718,
+                  "screenshotName": "ece6f8c2c6190d51927c758356c6853876ecbb71bad1ba31ff6abba4e24116f4.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 9,
+              "description": "Visitante de Transportes Sofka enters \u0027\u0027 into Campo de contraseÃ±a del usuario",
+              "duration": 1822,
+              "startTime": "2023-04-27T21:57:05.722-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png",
+                  "htmlSource": "pagesource3303632151813112071.html",
+                  "timeStamp": 1682650626335,
+                  "screenshotName": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png"
+                },
+                {
+                  "screenshot": "0efaf7cd507e5998cc75dff31a8bc16c7dcf164d91f9617a69cbb7c54070c7b0.png",
+                  "htmlSource": "pagesource381737718103792447.html",
+                  "timeStamp": 1682650627012,
+                  "screenshotName": "0efaf7cd507e5998cc75dff31a8bc16c7dcf164d91f9617a69cbb7c54070c7b0.png"
+                },
+                {
+                  "screenshot": "99a23b8f2a9d10e3df6333ac9b6dbfe5b27d7d839381e2b1b68a774a1d4c9691.png",
+                  "timeStamp": 1682650627544,
+                  "screenshotName": "99a23b8f2a9d10e3df6333ac9b6dbfe5b27d7d839381e2b1b68a774a1d4c9691.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 10,
+              "description": "Visitante de Transportes Sofka clicks on BotÃ³n de Iniciar sesiÃ³n",
+              "duration": 977,
+              "startTime": "2023-04-27T21:57:07.547-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "99a23b8f2a9d10e3df6333ac9b6dbfe5b27d7d839381e2b1b68a774a1d4c9691.png",
+                  "htmlSource": "pagesource6032457850502438412.html",
+                  "timeStamp": 1682650627607,
+                  "screenshotName": "99a23b8f2a9d10e3df6333ac9b6dbfe5b27d7d839381e2b1b68a774a1d4c9691.png"
+                },
+                {
+                  "screenshot": "3ecf1d185ee044a12e7cae9e913946149d4cafc274aae57462a864256dd16616.png",
+                  "htmlSource": "pagesource808292153972184497.html",
+                  "timeStamp": 1682650628504,
+                  "screenshotName": "3ecf1d185ee044a12e7cae9e913946149d4cafc274aae57462a864256dd16616.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "description": "Entonces visualizare un mensaje de error \u0027No debe estar vacio!\u0027",
+          "duration": 2528,
+          "startTime": "2023-04-27T21:57:08.991-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png",
+              "htmlSource": "pagesource788360213777402433.html",
+              "timeStamp": 1682650629042,
+              "screenshotName": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 12,
+              "description": "Then contrasenna invalida mensaje should be \u0027No debe estar vacio!\u0027",
+              "duration": 1379,
+              "startTime": "2023-04-27T21:57:09.057-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png",
+                  "htmlSource": "pagesource8721248333705278257.html",
+                  "timeStamp": 1682650629702,
+                  "screenshotName": "d509fd2c2510487e5e25d4a58a05ec413cd854a0915eea5a6fd0efc95d5aeaf4.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "description": "2: Inicio de sesión inválido ({correo\u003d, contrasenna\u003dmaria123, mensaje\u003dNo debe estar vacio!})",
+      "duration": 17911,
+      "startTime": "2023-04-27T21:57:11.611-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "lineNumber": 26,
+      "children": [
+        {
+          "number": 14,
+          "description": "Dado que estoy en la pagina de login",
+          "duration": 10092,
+          "startTime": "2023-04-27T21:57:11.675-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "timeStamp": 1682650641767,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 15,
+              "description": "Visitante de transportes sofka abrir pagina inicial",
+              "duration": 4477,
+              "startTime": "2023-04-27T21:57:14.580-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                  "htmlSource": "pagesource7545681707948544456.html",
+                  "timeStamp": 1682650634933,
+                  "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                },
+                {
+                  "screenshot": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png",
+                  "timeStamp": 1682650639057,
+                  "screenshotName": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 16,
+                  "description": "Visitante de Transportes Sofka opens the Pagina inicial",
+                  "duration": 4075,
+                  "startTime": "2023-04-27T21:57:14.940-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                      "htmlSource": "pagesource3001798301608076332.html",
+                      "timeStamp": 1682650635243,
+                      "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                    },
+                    {
+                      "screenshot": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png",
+                      "timeStamp": 1682650639015,
+                      "screenshotName": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "description": "Visitante de transportes sofka ir a iniciar sesion",
+              "duration": 2658,
+              "startTime": "2023-04-27T21:57:19.060-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "f900e99bcd88479fb5b24a02cd87d2001bfe3947848de616fd63381071c13f3b.png",
+                  "htmlSource": "pagesource3496498041068871216.html",
+                  "timeStamp": 1682650639657,
+                  "screenshotName": "f900e99bcd88479fb5b24a02cd87d2001bfe3947848de616fd63381071c13f3b.png"
+                },
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "timeStamp": 1682650641718,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 18,
+                  "description": "Visitante de Transportes Sofka clicks on BotÃ³n de iniciar sesiÃ³n",
+                  "duration": 1511,
+                  "startTime": "2023-04-27T21:57:19.662-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "f900e99bcd88479fb5b24a02cd87d2001bfe3947848de616fd63381071c13f3b.png",
+                      "htmlSource": "pagesource6805860974647034167.html",
+                      "timeStamp": 1682650639700,
+                      "screenshotName": "f900e99bcd88479fb5b24a02cd87d2001bfe3947848de616fd63381071c13f3b.png"
+                    },
+                    {
+                      "screenshot": "a26b91f3bee010e6d3cb33a0388e54c7bb547b43e1566170d68846ab7bdd2e32.png",
+                      "htmlSource": "pagesource2486515325440602976.html",
+                      "timeStamp": 1682650640721,
+                      "screenshotName": "a26b91f3bee010e6d3cb33a0388e54c7bb547b43e1566170d68846ab7bdd2e32.png"
+                    },
+                    {
+                      "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                      "timeStamp": 1682650641172,
+                      "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "description": "Cuando ingreso el usuario \u0027\u0027 con la contrasenna \u0027maria123\u0027",
+          "duration": 5457,
+          "startTime": "2023-04-27T21:57:21.769-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "htmlSource": "pagesource4774253293378267597.html",
+              "timeStamp": 1682650642286,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            },
+            {
+              "screenshot": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png",
+              "timeStamp": 1682650647226,
+              "screenshotName": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 20,
+              "description": "Visitante de Transportes Sofka enters \u0027\u0027 into Campo de correo del usuario",
+              "duration": 1731,
+              "startTime": "2023-04-27T21:57:22.298-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "htmlSource": "pagesource1418728043384407947.html",
+                  "timeStamp": 1682650642782,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                },
+                {
+                  "screenshot": "05714a13c80a31f1420c0055900a15695bff6a029f55c4a43e04acc7e14333a7.png",
+                  "htmlSource": "pagesource6720399921958023795.html",
+                  "timeStamp": 1682650643459,
+                  "screenshotName": "05714a13c80a31f1420c0055900a15695bff6a029f55c4a43e04acc7e14333a7.png"
+                },
+                {
+                  "screenshot": "000cae268a0823bb7d39a952a12c0a85b2c5938e164d08ee9d41014d5273be18.png",
+                  "timeStamp": 1682650644029,
+                  "screenshotName": "000cae268a0823bb7d39a952a12c0a85b2c5938e164d08ee9d41014d5273be18.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 21,
+              "description": "Visitante de Transportes Sofka enters \u0027maria123\u0027 into Campo de contraseÃ±a del usuario",
+              "duration": 1349,
+              "startTime": "2023-04-27T21:57:24.033-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "000cae268a0823bb7d39a952a12c0a85b2c5938e164d08ee9d41014d5273be18.png",
+                  "htmlSource": "pagesource4983012475999113210.html",
+                  "timeStamp": 1682650644108,
+                  "screenshotName": "000cae268a0823bb7d39a952a12c0a85b2c5938e164d08ee9d41014d5273be18.png"
+                },
+                {
+                  "screenshot": "5e0cec2d3f50748b618f2bcf181dcbca804d0c476829e81f44ad1d8a39d4121d.png",
+                  "htmlSource": "pagesource3576002390370799390.html",
+                  "timeStamp": 1682650644942,
+                  "screenshotName": "5e0cec2d3f50748b618f2bcf181dcbca804d0c476829e81f44ad1d8a39d4121d.png"
+                },
+                {
+                  "screenshot": "202d0f37f0ef0232e3e13e67ecae93b5928305aae017fba416b90882d00471ff.png",
+                  "timeStamp": 1682650645382,
+                  "screenshotName": "202d0f37f0ef0232e3e13e67ecae93b5928305aae017fba416b90882d00471ff.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 22,
+              "description": "Visitante de Transportes Sofka clicks on BotÃ³n de Iniciar sesiÃ³n",
+              "duration": 1242,
+              "startTime": "2023-04-27T21:57:25.385-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "202d0f37f0ef0232e3e13e67ecae93b5928305aae017fba416b90882d00471ff.png",
+                  "htmlSource": "pagesource1386412086301881165.html",
+                  "timeStamp": 1682650645422,
+                  "screenshotName": "202d0f37f0ef0232e3e13e67ecae93b5928305aae017fba416b90882d00471ff.png"
+                },
+                {
+                  "screenshot": "1910492f7c75b0d8a485fd848e3eada13db02b417fb9ed8b52ffea26440b6693.png",
+                  "htmlSource": "pagesource5022869467745807277.html",
+                  "timeStamp": 1682650646117,
+                  "screenshotName": "1910492f7c75b0d8a485fd848e3eada13db02b417fb9ed8b52ffea26440b6693.png"
+                },
+                {
+                  "screenshot": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png",
+                  "timeStamp": 1682650646627,
+                  "screenshotName": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "description": "Entonces visualizare un mensaje de error \u0027No debe estar vacio!\u0027",
+          "duration": 2148,
+          "startTime": "2023-04-27T21:57:27.229-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png",
+              "htmlSource": "pagesource3607858819399654181.html",
+              "timeStamp": 1682650647287,
+              "screenshotName": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 24,
+              "description": "Then contrasenna invalida mensaje should be \u0027No debe estar vacio!\u0027",
+              "duration": 1156,
+              "startTime": "2023-04-27T21:57:27.297-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png",
+                  "htmlSource": "pagesource594712160364558475.html",
+                  "timeStamp": 1682650647863,
+                  "screenshotName": "e465de2e7612d116c351ce85e662319c6700222f4d62d1fd969710b388bf153e.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "description": "3: Inicio de sesión inválido ({correo\u003dmariagmail.com, contrasenna\u003dmaria123, mensaje\u003dDato no válido!})",
+      "duration": 16268,
+      "startTime": "2023-04-27T21:57:29.549-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "lineNumber": 27,
+      "children": [
+        {
+          "number": 26,
+          "description": "Dado que estoy en la pagina de login",
+          "duration": 9352,
+          "startTime": "2023-04-27T21:57:29.724-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "timeStamp": 1682650659076,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 27,
+              "description": "Visitante de transportes sofka abrir pagina inicial",
+              "duration": 4114,
+              "startTime": "2023-04-27T21:57:32.094-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                  "htmlSource": "pagesource7802826908828497490.html",
+                  "timeStamp": 1682650652389,
+                  "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                },
+                {
+                  "screenshot": "2150dbae35034f062be17bb8c7656cc19bde4690a373bd51a25d51998e0b659f.png",
+                  "timeStamp": 1682650656208,
+                  "screenshotName": "2150dbae35034f062be17bb8c7656cc19bde4690a373bd51a25d51998e0b659f.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 28,
+                  "description": "Visitante de Transportes Sofka opens the Pagina inicial",
+                  "duration": 3769,
+                  "startTime": "2023-04-27T21:57:32.395-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                      "htmlSource": "pagesource6778788314014596247.html",
+                      "timeStamp": 1682650652427,
+                      "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                    },
+                    {
+                      "screenshot": "2150dbae35034f062be17bb8c7656cc19bde4690a373bd51a25d51998e0b659f.png",
+                      "timeStamp": 1682650656164,
+                      "screenshotName": "2150dbae35034f062be17bb8c7656cc19bde4690a373bd51a25d51998e0b659f.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "number": 29,
+              "description": "Visitante de transportes sofka ir a iniciar sesion",
+              "duration": 2837,
+              "startTime": "2023-04-27T21:57:36.212-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "7412c0e2078877eefcef6a538349795e7fdff58a29e90bba9d63da92f50a2c97.png",
+                  "htmlSource": "pagesource8251420402774775521.html",
+                  "timeStamp": 1682650656821,
+                  "screenshotName": "7412c0e2078877eefcef6a538349795e7fdff58a29e90bba9d63da92f50a2c97.png"
+                },
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "timeStamp": 1682650659049,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 30,
+                  "description": "Visitante de Transportes Sofka clicks on BotÃ³n de iniciar sesiÃ³n",
+                  "duration": 1748,
+                  "startTime": "2023-04-27T21:57:36.827-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "7412c0e2078877eefcef6a538349795e7fdff58a29e90bba9d63da92f50a2c97.png",
+                      "htmlSource": "pagesource2733826216065059491.html",
+                      "timeStamp": 1682650656862,
+                      "screenshotName": "7412c0e2078877eefcef6a538349795e7fdff58a29e90bba9d63da92f50a2c97.png"
+                    },
+                    {
+                      "screenshot": "9554bf0be82092f99ab9e0daa9d67e1d43c3de6de32eac7fd0c40845862567e7.png",
+                      "htmlSource": "pagesource4144443385942233644.html",
+                      "timeStamp": 1682650658020,
+                      "screenshotName": "9554bf0be82092f99ab9e0daa9d67e1d43c3de6de32eac7fd0c40845862567e7.png"
+                    },
+                    {
+                      "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                      "timeStamp": 1682650658575,
+                      "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "description": "Cuando ingreso el usuario \u0027mariagmail.com\u0027 con la contrasenna \u0027maria123\u0027",
+          "duration": 4504,
+          "startTime": "2023-04-27T21:57:39.079-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "htmlSource": "pagesource6447485868787331272.html",
+              "timeStamp": 1682650659113,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            },
+            {
+              "screenshot": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png",
+              "timeStamp": 1682650663583,
+              "screenshotName": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 32,
+              "description": "Visitante de Transportes Sofka enters \u0027mariagmail.com\u0027 into Campo de correo del usuario",
+              "duration": 1836,
+              "startTime": "2023-04-27T21:57:39.126-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "htmlSource": "pagesource5864101187612536566.html",
+                  "timeStamp": 1682650659616,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                },
+                {
+                  "screenshot": "e933851716a23273d4e1af95e7fa54ed63ee2c1ad4ab5c22896d33a19faf4339.png",
+                  "htmlSource": "pagesource8724219002010239591.html",
+                  "timeStamp": 1682650660381,
+                  "screenshotName": "e933851716a23273d4e1af95e7fa54ed63ee2c1ad4ab5c22896d33a19faf4339.png"
+                },
+                {
+                  "screenshot": "61ab7ec39bc6d4fad119614e624190d407b57d5be3d6f59cf718fef0072e72e9.png",
+                  "timeStamp": 1682650660962,
+                  "screenshotName": "61ab7ec39bc6d4fad119614e624190d407b57d5be3d6f59cf718fef0072e72e9.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 33,
+              "description": "Visitante de Transportes Sofka enters \u0027maria123\u0027 into Campo de contraseÃ±a del usuario",
+              "duration": 1306,
+              "startTime": "2023-04-27T21:57:40.967-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "61ab7ec39bc6d4fad119614e624190d407b57d5be3d6f59cf718fef0072e72e9.png",
+                  "htmlSource": "pagesource2376154548460264714.html",
+                  "timeStamp": 1682650661029,
+                  "screenshotName": "61ab7ec39bc6d4fad119614e624190d407b57d5be3d6f59cf718fef0072e72e9.png"
+                },
+                {
+                  "screenshot": "e214fc2ed85417ad3bd6b132464e20c2773a0f30b5dc99198de0a9b98aa60573.png",
+                  "htmlSource": "pagesource8938290441701272890.html",
+                  "timeStamp": 1682650661802,
+                  "screenshotName": "e214fc2ed85417ad3bd6b132464e20c2773a0f30b5dc99198de0a9b98aa60573.png"
+                },
+                {
+                  "screenshot": "5d005b4cec8ddd98b870bf394da5596551c96377a4cbecc915edb6bb7bdde834.png",
+                  "timeStamp": 1682650662273,
+                  "screenshotName": "5d005b4cec8ddd98b870bf394da5596551c96377a4cbecc915edb6bb7bdde834.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 34,
+              "description": "Visitante de Transportes Sofka clicks on BotÃ³n de Iniciar sesiÃ³n",
+              "duration": 766,
+              "startTime": "2023-04-27T21:57:42.276-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "5d005b4cec8ddd98b870bf394da5596551c96377a4cbecc915edb6bb7bdde834.png",
+                  "htmlSource": "pagesource2909009145021895320.html",
+                  "timeStamp": 1682650662312,
+                  "screenshotName": "5d005b4cec8ddd98b870bf394da5596551c96377a4cbecc915edb6bb7bdde834.png"
+                },
+                {
+                  "screenshot": "82b4d0bc20ffb8686f29f055554e60dc245f4b3f2f729ed9ea12c7b73acb8409.png",
+                  "htmlSource": "pagesource3345351404841837462.html",
+                  "timeStamp": 1682650663026,
+                  "screenshotName": "82b4d0bc20ffb8686f29f055554e60dc245f4b3f2f729ed9ea12c7b73acb8409.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        },
+        {
+          "number": 35,
+          "description": "Entonces visualizare un mensaje de error \u0027Dato no válido!\u0027",
+          "duration": 2196,
+          "startTime": "2023-04-27T21:57:43.586-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png",
+              "htmlSource": "pagesource6689152156309115097.html",
+              "timeStamp": 1682650663649,
+              "screenshotName": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 36,
+              "description": "Then contrasenna invalida mensaje should be \u0027Dato no v\u0026aacute;lido!\u0027",
+              "duration": 1144,
+              "startTime": "2023-04-27T21:57:43.657-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png",
+                  "htmlSource": "pagesource5033780539810917794.html",
+                  "timeStamp": 1682650664206,
+                  "screenshotName": "a14680385f0837d87e2838ccd17c876e13ae819644dc5f0f37b0ba614dc38781.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "description": "4: Inicio de sesión inválido ({correo\u003d~`!#$%^\u0026@gmail.com, contrasenna\u003dmaria123, mensaje\u003dDato no válido!})",
+      "duration": 18209,
+      "startTime": "2023-04-27T21:57:45.837-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "lineNumber": 28,
+      "children": [
+        {
+          "number": 38,
+          "description": "Dado que estoy en la pagina de login",
+          "duration": 8934,
+          "startTime": "2023-04-27T21:57:45.936-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "timeStamp": 1682650674870,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 39,
+              "description": "Visitante de transportes sofka abrir pagina inicial",
+              "duration": 4089,
+              "startTime": "2023-04-27T21:57:48.139-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                  "htmlSource": "pagesource5810586018241915898.html",
+                  "timeStamp": 1682650668405,
+                  "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                },
+                {
+                  "screenshot": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png",
+                  "timeStamp": 1682650672228,
+                  "screenshotName": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 40,
+                  "description": "Visitante de Transportes Sofka opens the Pagina inicial",
+                  "duration": 3780,
+                  "startTime": "2023-04-27T21:57:48.411-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                      "htmlSource": "pagesource4402066014372560093.html",
+                      "timeStamp": 1682650668439,
+                      "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                    },
+                    {
+                      "screenshot": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png",
+                      "timeStamp": 1682650672191,
+                      "screenshotName": "175bfb1abc4f25947d7dd6595190c04561de4cd30dca34358ca33a3b42e850f1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "number": 41,
+              "description": "Visitante de transportes sofka ir a iniciar sesion",
+              "duration": 2119,
+              "startTime": "2023-04-27T21:57:52.232-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png",
+                  "htmlSource": "pagesource8472711330665624026.html",
+                  "timeStamp": 1682650672856,
+                  "screenshotName": "191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png"
+                },
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "timeStamp": 1682650674351,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 42,
+                  "description": "Visitante de Transportes Sofka clicks on BotÃ³n de iniciar sesiÃ³n",
+                  "duration": 1461,
+                  "startTime": "2023-04-27T21:57:52.859-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png",
+                      "htmlSource": "pagesource1660960660949595012.html",
+                      "timeStamp": 1682650672893,
+                      "screenshotName": "191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png"
+                    },
+                    {
+                      "screenshot": "a26b91f3bee010e6d3cb33a0388e54c7bb547b43e1566170d68846ab7bdd2e32.png",
+                      "htmlSource": "pagesource2032225558759290427.html",
+                      "timeStamp": 1682650673876,
+                      "screenshotName": "a26b91f3bee010e6d3cb33a0388e54c7bb547b43e1566170d68846ab7bdd2e32.png"
+                    },
+                    {
+                      "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                      "timeStamp": 1682650674320,
+                      "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 43,
+          "description": "Cuando ingreso el usuario \u0027~`!#$%^\u0026@gmail.com\u0027 con la contrasenna \u0027maria123\u0027",
+          "duration": 5973,
+          "startTime": "2023-04-27T21:57:54.873-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "htmlSource": "pagesource2482847114814269055.html",
+              "timeStamp": 1682650674929,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            },
+            {
+              "screenshot": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png",
+              "timeStamp": 1682650680846,
+              "screenshotName": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 44,
+              "description": "Visitante de Transportes Sofka enters \u0027~`!#$%^\u0026@gmail.com\u0027 into Campo de correo del usuario",
+              "duration": 2153,
+              "startTime": "2023-04-27T21:57:54.946-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "htmlSource": "pagesource6682342494271457015.html",
+                  "timeStamp": 1682650675579,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                },
+                {
+                  "screenshot": "577f64198cceb61cccedc232abf5039cbedddf61e4626f3c1f7824350edee73e.png",
+                  "htmlSource": "pagesource5701651099262266429.html",
+                  "timeStamp": 1682650676526,
+                  "screenshotName": "577f64198cceb61cccedc232abf5039cbedddf61e4626f3c1f7824350edee73e.png"
+                },
+                {
+                  "screenshot": "a23579e3638817adbb5611511c2ae630360d75b2e9fe036d3b85b883a2664161.png",
+                  "timeStamp": 1682650677099,
+                  "screenshotName": "a23579e3638817adbb5611511c2ae630360d75b2e9fe036d3b85b883a2664161.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 45,
+              "description": "Visitante de Transportes Sofka enters \u0027maria123\u0027 into Campo de contraseÃ±a del usuario",
+              "duration": 1420,
+              "startTime": "2023-04-27T21:57:57.102-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "a23579e3638817adbb5611511c2ae630360d75b2e9fe036d3b85b883a2664161.png",
+                  "htmlSource": "pagesource917203579313113077.html",
+                  "timeStamp": 1682650677147,
+                  "screenshotName": "a23579e3638817adbb5611511c2ae630360d75b2e9fe036d3b85b883a2664161.png"
+                },
+                {
+                  "screenshot": "d9fba8f7fd32df9b7925cac5eddd271af12891124b3ae722fa9733df4e397f09.png",
+                  "htmlSource": "pagesource1029620849355939029.html",
+                  "timeStamp": 1682650677915,
+                  "screenshotName": "d9fba8f7fd32df9b7925cac5eddd271af12891124b3ae722fa9733df4e397f09.png"
+                },
+                {
+                  "screenshot": "9cff807b5c198b0bf40ab366095f7e5f8404c3e07a546caac08bb55847a48114.png",
+                  "timeStamp": 1682650678522,
+                  "screenshotName": "9cff807b5c198b0bf40ab366095f7e5f8404c3e07a546caac08bb55847a48114.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 46,
+              "description": "Visitante de Transportes Sofka clicks on BotÃ³n de Iniciar sesiÃ³n",
+              "duration": 1794,
+              "startTime": "2023-04-27T21:57:58.526-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "9cff807b5c198b0bf40ab366095f7e5f8404c3e07a546caac08bb55847a48114.png",
+                  "htmlSource": "pagesource2773487180457052008.html",
+                  "timeStamp": 1682650678595,
+                  "screenshotName": "9cff807b5c198b0bf40ab366095f7e5f8404c3e07a546caac08bb55847a48114.png"
+                },
+                {
+                  "screenshot": "100f1afc8757e00de99da6987ecb4b17b1c402f64307b11504396da2e1691b1e.png",
+                  "htmlSource": "pagesource1469590519034125380.html",
+                  "timeStamp": 1682650679701,
+                  "screenshotName": "100f1afc8757e00de99da6987ecb4b17b1c402f64307b11504396da2e1691b1e.png"
+                },
+                {
+                  "screenshot": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png",
+                  "timeStamp": 1682650680319,
+                  "screenshotName": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        },
+        {
+          "number": 47,
+          "description": "Entonces visualizare un mensaje de error \u0027Dato no válido!\u0027",
+          "duration": 3172,
+          "startTime": "2023-04-27T21:58:00.848-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png",
+              "htmlSource": "pagesource6747868480197191685.html",
+              "timeStamp": 1682650680880,
+              "screenshotName": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 48,
+              "description": "Then contrasenna invalida mensaje should be \u0027Dato no v\u0026aacute;lido!\u0027",
+              "duration": 1155,
+              "startTime": "2023-04-27T21:58:00.895-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png",
+                  "htmlSource": "pagesource4061624446064700290.html",
+                  "timeStamp": 1682650681422,
+                  "screenshotName": "6389fc536b6c0349d3ed4994f26dc69f48011650ba84e50fd62cad78bea72ff9.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "description": "5: Inicio de sesión inválido ({correo\u003dmaria@gmail.com, contrasenna\u003daria123, mensaje\u003dNo debe estar vacio!})",
+      "duration": 18751,
+      "startTime": "2023-04-27T21:58:04.072-05:00[America/Bogota]",
+      "result": "SUCCESS",
+      "precondition": false,
+      "level": 0,
+      "lineNumber": 29,
+      "children": [
+        {
+          "number": 50,
+          "description": "Dado que estoy en la pagina de login",
+          "duration": 10270,
+          "startTime": "2023-04-27T21:58:04.121-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "timeStamp": 1682650694391,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 51,
+              "description": "Visitante de transportes sofka abrir pagina inicial",
+              "duration": 4844,
+              "startTime": "2023-04-27T21:58:06.697-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                  "htmlSource": "pagesource6546463230244380965.html",
+                  "timeStamp": 1682650686990,
+                  "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                },
+                {
+                  "screenshot": "0551682b494d515694d055ed30e7e6c1aad446c2d8696fb0f790da9dca985142.png",
+                  "timeStamp": 1682650691541,
+                  "screenshotName": "0551682b494d515694d055ed30e7e6c1aad446c2d8696fb0f790da9dca985142.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 52,
+                  "description": "Visitante de Transportes Sofka opens the Pagina inicial",
+                  "duration": 3921,
+                  "startTime": "2023-04-27T21:58:06.994-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png",
+                      "htmlSource": "pagesource8543828955049742731.html",
+                      "timeStamp": 1682650687019,
+                      "screenshotName": "b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png"
+                    },
+                    {
+                      "screenshot": "39c684034581aac51ad3822a12a7b05db39c7c449c3b4ef7eb5ddde06aa8bbb6.png",
+                      "timeStamp": 1682650690915,
+                      "screenshotName": "39c684034581aac51ad3822a12a7b05db39c7c449c3b4ef7eb5ddde06aa8bbb6.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "number": 53,
+              "description": "Visitante de transportes sofka ir a iniciar sesion",
+              "duration": 2806,
+              "startTime": "2023-04-27T21:58:11.546-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "0551682b494d515694d055ed30e7e6c1aad446c2d8696fb0f790da9dca985142.png",
+                  "htmlSource": "pagesource2717632720021168832.html",
+                  "timeStamp": 1682650691586,
+                  "screenshotName": "0551682b494d515694d055ed30e7e6c1aad446c2d8696fb0f790da9dca985142.png"
+                },
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "timeStamp": 1682650694352,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2,
+              "children": [
+                {
+                  "number": 54,
+                  "description": "Visitante de Transportes Sofka clicks on BotÃ³n de iniciar sesiÃ³n",
+                  "duration": 2242,
+                  "startTime": "2023-04-27T21:58:11.594-05:00[America/Bogota]",
+                  "screenshots": [
+                    {
+                      "screenshot": "1c3af8fe53e5e4878af6171635bf051b08c3a3ac96b75a89b5daaab6a1a32935.png",
+                      "htmlSource": "pagesource5080314318997255816.html",
+                      "timeStamp": 1682650692135,
+                      "screenshotName": "1c3af8fe53e5e4878af6171635bf051b08c3a3ac96b75a89b5daaab6a1a32935.png"
+                    },
+                    {
+                      "screenshot": "33950f00e55ddc9035a04aba49633e3d6b365b94eab4193d549374f2616d6616.png",
+                      "htmlSource": "pagesource7176859337138042592.html",
+                      "timeStamp": 1682650693314,
+                      "screenshotName": "33950f00e55ddc9035a04aba49633e3d6b365b94eab4193d549374f2616d6616.png"
+                    },
+                    {
+                      "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                      "timeStamp": 1682650693836,
+                      "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                    }
+                  ],
+                  "result": "SUCCESS",
+                  "precondition": false,
+                  "level": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 55,
+          "description": "Cuando ingreso el usuario \u0027maria@gmail.com\u0027 con la contrasenna \u0027aria123\u0027",
+          "duration": 4939,
+          "startTime": "2023-04-27T21:58:14.392-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+              "htmlSource": "pagesource4607119861670633282.html",
+              "timeStamp": 1682650694878,
+              "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+            },
+            {
+              "screenshot": "7cfdb15a39335bca38da23472eef4153428fd727d82c19ac9e5cf246e0c1dcaa.png",
+              "timeStamp": 1682650699330,
+              "screenshotName": "7cfdb15a39335bca38da23472eef4153428fd727d82c19ac9e5cf246e0c1dcaa.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 56,
+              "description": "Visitante de Transportes Sofka enters \u0027maria@gmail.com\u0027 into Campo de correo del usuario",
+              "duration": 1241,
+              "startTime": "2023-04-27T21:58:14.888-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png",
+                  "htmlSource": "pagesource8131896395036690823.html",
+                  "timeStamp": 1682650695387,
+                  "screenshotName": "dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png"
+                },
+                {
+                  "screenshot": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png",
+                  "htmlSource": "pagesource2594533279417427470.html",
+                  "timeStamp": 1682650696102,
+                  "screenshotName": "82464effec04a0b441c52c27766bfb96b3d64ab8f4ff147ec8b38a33fa6f26b6.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 57,
+              "description": "Visitante de Transportes Sofka enters \u0027aria123\u0027 into Campo de contraseÃ±a del usuario",
+              "duration": 1857,
+              "startTime": "2023-04-27T21:58:16.130-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "ece6f8c2c6190d51927c758356c6853876ecbb71bad1ba31ff6abba4e24116f4.png",
+                  "htmlSource": "pagesource5397572590724348412.html",
+                  "timeStamp": 1682650696707,
+                  "screenshotName": "ece6f8c2c6190d51927c758356c6853876ecbb71bad1ba31ff6abba4e24116f4.png"
+                },
+                {
+                  "screenshot": "796a28bf631c8e952b2f0c349f5e6c2a71cffa9ae903251f172cd0656aa5241f.png",
+                  "htmlSource": "pagesource2180524105353292095.html",
+                  "timeStamp": 1682650697533,
+                  "screenshotName": "796a28bf631c8e952b2f0c349f5e6c2a71cffa9ae903251f172cd0656aa5241f.png"
+                },
+                {
+                  "screenshot": "00998d9a96aba5fc0fd7613338e1e2c128a8fb1168ec6f87127582c00f2ad8fe.png",
+                  "timeStamp": 1682650697987,
+                  "screenshotName": "00998d9a96aba5fc0fd7613338e1e2c128a8fb1168ec6f87127582c00f2ad8fe.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            },
+            {
+              "number": 58,
+              "description": "Visitante de Transportes Sofka clicks on BotÃ³n de Iniciar sesiÃ³n",
+              "duration": 752,
+              "startTime": "2023-04-27T21:58:17.989-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "00998d9a96aba5fc0fd7613338e1e2c128a8fb1168ec6f87127582c00f2ad8fe.png",
+                  "htmlSource": "pagesource4666350698266216963.html",
+                  "timeStamp": 1682650698030,
+                  "screenshotName": "00998d9a96aba5fc0fd7613338e1e2c128a8fb1168ec6f87127582c00f2ad8fe.png"
+                },
+                {
+                  "screenshot": "7f1baf4bba3597ab4cb4fb9a3520882c1950484852a8d067d0a1ebbef9b1debc.png",
+                  "htmlSource": "pagesource7857684365445015670.html",
+                  "timeStamp": 1682650698723,
+                  "screenshotName": "7f1baf4bba3597ab4cb4fb9a3520882c1950484852a8d067d0a1ebbef9b1debc.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        },
+        {
+          "number": 59,
+          "description": "Entonces visualizare un mensaje de error \u0027No debe estar vacio!\u0027",
+          "duration": 3466,
+          "startTime": "2023-04-27T21:58:19.339-05:00[America/Bogota]",
+          "screenshots": [
+            {
+              "screenshot": "9587829eecbeb369352bb6630011c9b7f31f88200acc2c682680de32125fafe6.png",
+              "htmlSource": "pagesource9037167366923161145.html",
+              "timeStamp": 1682650699972,
+              "screenshotName": "9587829eecbeb369352bb6630011c9b7f31f88200acc2c682680de32125fafe6.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "level": 1,
+          "children": [
+            {
+              "number": 60,
+              "description": "Then contrasenna invalida mensaje should be \u0027No debe estar vacio!\u0027",
+              "duration": 755,
+              "startTime": "2023-04-27T21:58:19.981-05:00[America/Bogota]",
+              "screenshots": [
+                {
+                  "screenshot": "9587829eecbeb369352bb6630011c9b7f31f88200acc2c682680de32125fafe6.png",
+                  "htmlSource": "pagesource2149183622353740712.html",
+                  "timeStamp": 1682650700031,
+                  "screenshotName": "9587829eecbeb369352bb6630011c9b7f31f88200acc2c682680de32125fafe6.png"
+                },
+                {
+                  "screenshot": "c9078e016dc149d51bf05d5a1e4f2b03ae74b01e003054c011445e9bcbd55f30.png",
+                  "timeStamp": 1682650700735,
+                  "screenshotName": "c9078e016dc149d51bf05d5a1e4f2b03ae74b01e003054c011445e9bcbd55f30.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false,
+              "level": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "userStory": {
+    "id": "inicio-de-sesión",
+    "storyName": "Inicio de sesión",
+    "displayName": "Inicio de sesión",
+    "path": "frontend/iniciarsesion.feature",
+    "narrative": "  Yo como usuario de la aplicación web de Transporte Sofka\n  Quiero iniciar sesión\n  Para poder ingresar a los servicios de la aplicación",
+    "type": "feature",
+    "qualifiedTag": {
+      "name": "Frontend/Inicio de sesión",
+      "type": "feature",
+      "displayName": "Frontend/Inicio de sesión"
+    }
+  },
+  "featureTag": {
+    "name": "Frontend/Inicio de sesión",
+    "type": "feature",
+    "displayName": "Frontend/Inicio de sesión"
+  },
+  "title": "Inicio de sesión inválido",
+  "description": "",
+  "backgroundTitle": "",
+  "backgroundDescription": "",
+  "tags": [
+    {
+      "name": "Frontend/Inicio de sesión",
+      "type": "feature",
+      "displayName": "Inicio de sesión"
+    },
+    {
+      "name": "Windows",
+      "type": "context",
+      "displayName": "Windows"
+    },
+    {
+      "name": "Backend",
+      "type": "capability",
+      "displayName": "Backend"
+    },
+    {
+      "name": "Frontend",
+      "type": "capability",
+      "displayName": "Frontend"
+    },
+    {
+      "name": "Backend/Inicio de sesión",
+      "type": "feature",
+      "displayName": "Inicio de sesión"
+    },
+    {
+      "name": "InicioSesionInvalido",
+      "type": "tag",
+      "displayName": "InicioSesionInvalido"
+    }
+  ],
+  "allTags": [
+    {
+      "name": "Frontend/Inicio de sesión",
+      "type": "feature",
+      "displayName": "Inicio de sesión"
+    },
+    {
+      "name": "Windows",
+      "type": "context",
+      "displayName": "Windows"
+    },
+    {
+      "name": "Backend",
+      "type": "capability",
+      "displayName": "Backend"
+    },
+    {
+      "name": "Frontend",
+      "type": "capability",
+      "displayName": "Frontend"
+    },
+    {
+      "name": "Backend/Inicio de sesión",
+      "type": "feature",
+      "displayName": "Inicio de sesión"
+    },
+    {
+      "name": "InicioSesionInvalido",
+      "type": "tag",
+      "displayName": "InicioSesionInvalido"
+    }
+  ],
+  "startTime": "2023-04-27T21:56:53.416-05:00[America/Bogota]",
+  "duration": 89408,
+  "projectKey": "",
+  "driver": "chrome",
+  "isManualTestingUpToDate": false,
+  "context": "windows",
+  "dataTable": {
+    "headers": [
+      "correo",
+      "contrasenna",
+      "mensaje"
+    ],
+    "rows": [
+      {
+        "values": [
+          "maria@gmail.com",
+          "",
+          "No debe estar vacio!"
+        ],
+        "lineNumber": 25,
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "",
+          "maria123",
+          "No debe estar vacio!"
+        ],
+        "lineNumber": 26,
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "mariagmail.com",
+          "maria123",
+          "Dato no válido!"
+        ],
+        "lineNumber": 27,
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "~`!#$%^\u0026@gmail.com",
+          "maria123",
+          "Dato no válido!"
+        ],
+        "lineNumber": 28,
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "maria@gmail.com",
+          "aria123",
+          "No debe estar vacio!"
+        ],
+        "lineNumber": 29,
+        "result": "SUCCESS"
+      }
+    ],
+    "predefinedRows": true,
+    "scenarioOutline": "Cuando ingreso el usuario \u0027\u003ccorreo\u003e\u0027 con la contrasenna \u0027\u003ccontrasenna\u003e\u0027\n\rEntonces visualizare un mensaje de error \u0027\u003cmensaje\u003e\u0027\n\r",
+    "dataSetDescriptors": [
+      {
+        "startRow": 0,
+        "rowCount": 0,
+        "name": "",
+        "description": ""
+      }
+    ]
+  },
+  "manual": false,
+  "testSource": "Cucumber",
+  "actors": [
+    {
+      "name": "Visitante de Transportes Sofka",
+      "can": [
+        "browse the web"
+      ]
+    }
+  ],
+  "result": "SUCCESS",
+  "scenarioOutline": "Cuando ingreso el usuario \u0027\u003ccorreo\u003e\u0027 con la contrasenna \u0027\u003ccontrasenna\u003e\u0027\r\nEntonces visualizare un mensaje de error \u0027\u003cmensaje\u003e\u0027"
+}

@@ -4,6 +4,7 @@ import com.sofkau.setup.WebSetup;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +15,10 @@ import static com.sofkau.questions.frontend.UsuarioMensaje.usuarioMensaje;
 import static com.sofkau.tasks.frontend.AbrirPaginaInicial.abrirPaginaInicial;
 import static com.sofkau.tasks.frontend.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.frontend.IrAIniciarSesion.irAIniciarSesion;
+import static com.sofkau.ui.PaginaPrincipal.BIENVENIDA;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static org.hamcrest.Matchers.*;
 
 public class IniciarSesionStepDef extends WebSetup {
@@ -44,7 +47,8 @@ public class IniciarSesionStepDef extends WebSetup {
         try {
             log.info("Llenando formulario válido");
             theActorInTheSpotlight().attemptsTo(
-                    iniciarSesion("maria@gmail.com", "maria123")
+                    iniciarSesion("maria@gmail.com", "maria123"),
+                    WaitUntil.the(BIENVENIDA, isVisible())
             );
         } catch (Exception e) {
             log.error("ERROR");

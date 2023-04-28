@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Transportes Sofka</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a011734b3450cb25c0c16ad602117ed7de1538ee50896386bf528ffc4369c086.html">Convertirse En Conductor</a></span>
+                > <span class="truncate-60"><a
+                    href="e1981a000f1a0949ddb9ce11898df04dccd8311069c1d9d7898a6c68a395ed24.html">Convertirse en conductor err&oacute;neo </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-04-2023 22:02</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Convertirse En Conductor </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario de la aplicación web de Transporte Sofka<br />
+Quiero convertirme en conductor<br />
+Para poder ofrecer mis servicios
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="4b3db4e702f0468239bf39cfdcb169dfb45ed6ea385e9a440673324096a61b51.html">Convertirse Conductor Erroneo
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Convertirse en conductor err&oacute;neo
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que inicie sesion como usuario '&lt;correo&gt;' con contrasenna '&lt;contrasenna&gt;'<br>Cuando accedo a la pagina de registro de conductor<br>Y completo los campos de telefono '&lt;telefono&gt;' con dni '&lt;dni&gt;'<br>Entonces podre visualizar un mensaje '&lt;mensaje&gt;'</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" 1: Convertirse en conductor err&oacute;neo ({correo=veronica.palacios@yahoo.com, contrasenna=94t9hli0e, telefono=320125874, dni=, mensaje=No debe estar vacio!})" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Dado que inicie sesion como usuario 'veronica.palacios@yahoo.com' con contrasenna '94t9hli0e'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de transportes sofka abrir pagina inicial" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de Transportes Sofka opens the Pagina inicial" width="1920"/>
+                <img src="f8b83b68e5d9d5cebef9c965f083708c38c9059cd5e2811a255434ec938337ed.png" title=" Visitante de Transportes Sofka opens the Pagina inicial (completed)" width="1920"/>
+                <img src="f8b83b68e5d9d5cebef9c965f083708c38c9059cd5e2811a255434ec938337ed.png" title=" Visitante de transportes sofka abrir pagina inicial (completed)" width="1920"/>
+                <img src="4137300d15caa275341878eeaf151ac7f1655d60f287e6c143b0d42d54b15299.png" title=" Visitante de transportes sofka ir a iniciar sesion" width="1920"/>
+                <img src="9e9da47227891f81d81974df428b834f30cf66690220116ef3200c19a08f3d6a.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="997e33c2d824e272639c7361e44aa13a8ebece9e4564e7d0805ffd93f6b7aa15.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de transportes sofka ir a iniciar sesion (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka enters 'veronica.palacios@yahoo.com' into Campo de correo del usuario" width="1920"/>
+                <img src="29c3319e192b49a7b2f8bd458f8565cc86d331ffb2893ebffe53309b9d18f064.png" title=" Visitante de Transportes Sofka enters 'veronica.palacios@yahoo.com' into Campo de correo del usuario" width="1920"/>
+                <img src="0b5f3876d1545b9a26be358f9cd557c70e4cb931169da039dd1207913825b4ac.png" title=" Visitante de Transportes Sofka enters 'veronica.palacios@yahoo.com' into Campo de correo del usuario (completed)" width="1920"/>
+                <img src="29c3319e192b49a7b2f8bd458f8565cc86d331ffb2893ebffe53309b9d18f064.png" title=" Visitante de Transportes Sofka enters '94t9hli0e' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="21c59d3b671a6508e99f1d7aaffbabc1829acf931553fa7a455372675e444f7d.png" title=" Visitante de Transportes Sofka enters '94t9hli0e' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="fb9329beba5df3dc58be9b0324edc0614bda0065697272bb778edc243ab67ab5.png" title=" Visitante de Transportes Sofka enters '94t9hli0e' into Campo de contrase&Atilde;&plusmn;a del usuario (completed)" width="1920"/>
+                <img src="fb9329beba5df3dc58be9b0324edc0614bda0065697272bb778edc243ab67ab5.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="6793216cabf9bfdabd641518d4d800e7532294e29ea4ff60b07f414ac2e163f3.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="c7fb673584f9d691612d44d5b3037cc2927c2778216d8bcc9b967af3ff12b31c.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="d862f99256380e9db19c80b87fb9e1197be2f86dc972be540cf3650090b4be63.png" title=" Dado que inicie sesion como usuario 'veronica.palacios@yahoo.com' con contrasenna '94t9hli0e' (completed)" width="1920"/>
+                <img src="d862f99256380e9db19c80b87fb9e1197be2f86dc972be540cf3650090b4be63.png" title=" Cuando accedo a la pagina de registro de conductor" width="1920"/>
+                <img src="d862f99256380e9db19c80b87fb9e1197be2f86dc972be540cf3650090b4be63.png" title=" Visitante de transportes sofka ir a convertirse conductor" width="1920"/>
+                <img src="d862f99256380e9db19c80b87fb9e1197be2f86dc972be540cf3650090b4be63.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor" width="1920"/>
+                <img src="9abb7d40504b21b3ea62bbde68a41d1e9a4e32831c299d1313f227f214c93600.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor (completed)" width="1920"/>
+                <img src="9abb7d40504b21b3ea62bbde68a41d1e9a4e32831c299d1313f227f214c93600.png" title=" Visitante de transportes sofka ir a convertirse conductor (completed)" width="1920"/>
+                <img src="9abb7d40504b21b3ea62bbde68a41d1e9a4e32831c299d1313f227f214c93600.png" title=" Cuando accedo a la pagina de registro de conductor (completed)" width="1920"/>
+                <img src="9abb7d40504b21b3ea62bbde68a41d1e9a4e32831c299d1313f227f214c93600.png" title=" Y completo los campos de telefono '320125874' con dni ''" width="1920"/>
+                <img src="9abb7d40504b21b3ea62bbde68a41d1e9a4e32831c299d1313f227f214c93600.png" title=" Visitante de Transportes Sofka enters '320125874' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="dc50d9b6cf49c7864ccb7865c4a6f5b9002127a4446fe8033e9a0f45e53d6d3a.png" title=" Visitante de Transportes Sofka enters '320125874' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="df84f98aeb34811ac9a70d81409c6753200382a79182d40c9b7112bcfe2645f6.png" title=" Visitante de Transportes Sofka enters '320125874' into Campo tel&Atilde;&copy;fono (completed)" width="1920"/>
+                <img src="df84f98aeb34811ac9a70d81409c6753200382a79182d40c9b7112bcfe2645f6.png" title=" Visitante de Transportes Sofka enters '' into Campo DNI" width="1920"/>
+                <img src="9d119b6c0e0c4dff11fbe26198c013911d249c501fadb16ee8a2854817694d4c.png" title=" Visitante de Transportes Sofka enters '' into Campo DNI" width="1920"/>
+                <img src="1bb85f6a8fadf3adf5a1fd2f5c64d606e6740e8ede04785abaffa674fc70e54a.png" title=" Visitante de Transportes Sofka enters '' into Campo DNI (completed)" width="1920"/>
+                <img src="1bb85f6a8fadf3adf5a1fd2f5c64d606e6740e8ede04785abaffa674fc70e54a.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="0ab583d78b676c18014658d6dbe1471d8542e859fffcd100da6599936c85bd7b.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="4905565b3146332d368a0f01a850a7c9afba0c2b6ce687e9ab9d0889af2ae76a.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar (completed)" width="1920"/>
+                <img src="4905565b3146332d368a0f01a850a7c9afba0c2b6ce687e9ab9d0889af2ae76a.png" title=" Y completo los campos de telefono '320125874' con dni '' (completed)" width="1920"/>
+                <img src="4905565b3146332d368a0f01a850a7c9afba0c2b6ce687e9ab9d0889af2ae76a.png" title=" Entonces podre visualizar un mensaje 'No debe estar vacio!'" width="1920"/>
+                <img src="4905565b3146332d368a0f01a850a7c9afba0c2b6ce687e9ab9d0889af2ae76a.png" title=" Then campos invalidos mensaje should be 'No debe estar vacio!'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" 2: Convertirse en conductor err&oacute;neo ({correo=karina.rangel@hotmail.com, contrasenna=frycgua3p61u343, telefono=, dni=43254788, mensaje=No debe estar vacio!})" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Dado que inicie sesion como usuario 'karina.rangel@hotmail.com' con contrasenna 'frycgua3p61u343'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de transportes sofka abrir pagina inicial" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de Transportes Sofka opens the Pagina inicial" width="1920"/>
+                <img src="2b433848f017a6abdb33b6a17b998ed71ae277709cb354e1c1f6e90e958da702.png" title=" Visitante de Transportes Sofka opens the Pagina inicial (completed)" width="1920"/>
+                <img src="2b433848f017a6abdb33b6a17b998ed71ae277709cb354e1c1f6e90e958da702.png" title=" Visitante de transportes sofka abrir pagina inicial (completed)" width="1920"/>
+                <img src="bad24a812c3ee893b5af7d59824e1378bef3a618aea96395f09cf8a0c1ddfd35.png" title=" Visitante de transportes sofka ir a iniciar sesion" width="1920"/>
+                <img src="f283f5e18e3526932a42398dfe4e6e65d78c8d56d10c650806462695626ae76b.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="beb06f56fd4e915a86cf1c842b3df8135f858db53320d3fd0199635aa3dd7f48.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de transportes sofka ir a iniciar sesion (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka enters 'karina.rangel@hotmail.com' into Campo de correo del usuario" width="1920"/>
+                <img src="da45335c026626ae2f92c01e208b9afbf6ad73c9186ddf15e8a7bf7a2825224a.png" title=" Visitante de Transportes Sofka enters 'karina.rangel@hotmail.com' into Campo de correo del usuario" width="1920"/>
+                <img src="f51cf3c8706a06fc917e95a18b0db9efa05a91a49fc026ad993540ae5e9ca77c.png" title=" Visitante de Transportes Sofka enters 'karina.rangel@hotmail.com' into Campo de correo del usuario (completed)" width="1920"/>
+                <img src="f51cf3c8706a06fc917e95a18b0db9efa05a91a49fc026ad993540ae5e9ca77c.png" title=" Visitante de Transportes Sofka enters 'frycgua3p61u343' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="fe007a44a5a00e5f481642427910b14279b92132954561d659153bf599682e7b.png" title=" Visitante de Transportes Sofka enters 'frycgua3p61u343' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="db51a63af676dab0df0a758cf1a47da10a842162e43f502d70e2fc62ee5d25e8.png" title=" Visitante de Transportes Sofka enters 'frycgua3p61u343' into Campo de contrase&Atilde;&plusmn;a del usuario (completed)" width="1920"/>
+                <img src="db51a63af676dab0df0a758cf1a47da10a842162e43f502d70e2fc62ee5d25e8.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="d9e52ed76ae94301fa8ef4b80b80b04f8fad94b4fef783801f84e317957b889c.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="ebb436487c1fd71ceaf06063b053e72f3cb75b48921cc3a73583471e311ead8e.png" title=" Dado que inicie sesion como usuario 'karina.rangel@hotmail.com' con contrasenna 'frycgua3p61u343' (completed)" width="1920"/>
+                <img src="ebb436487c1fd71ceaf06063b053e72f3cb75b48921cc3a73583471e311ead8e.png" title=" Cuando accedo a la pagina de registro de conductor" width="1920"/>
+                <img src="ebb436487c1fd71ceaf06063b053e72f3cb75b48921cc3a73583471e311ead8e.png" title=" Visitante de transportes sofka ir a convertirse conductor" width="1920"/>
+                <img src="ebb436487c1fd71ceaf06063b053e72f3cb75b48921cc3a73583471e311ead8e.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor" width="1920"/>
+                <img src="b4ef9a99e5c6ed3395aaefef6ce405f099fe8fe3582c44c033a3252665220e2a.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor (completed)" width="1920"/>
+                <img src="b4ef9a99e5c6ed3395aaefef6ce405f099fe8fe3582c44c033a3252665220e2a.png" title=" Visitante de transportes sofka ir a convertirse conductor (completed)" width="1920"/>
+                <img src="b4ef9a99e5c6ed3395aaefef6ce405f099fe8fe3582c44c033a3252665220e2a.png" title=" Cuando accedo a la pagina de registro de conductor (completed)" width="1920"/>
+                <img src="b4ef9a99e5c6ed3395aaefef6ce405f099fe8fe3582c44c033a3252665220e2a.png" title=" Y completo los campos de telefono '' con dni '43254788'" width="1920"/>
+                <img src="b4ef9a99e5c6ed3395aaefef6ce405f099fe8fe3582c44c033a3252665220e2a.png" title=" Visitante de Transportes Sofka enters '' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="80e3b3e24de96b878b40e269f13587dc3d61ed99b1960ef35b06fc621c5a47cb.png" title=" Visitante de Transportes Sofka enters '' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="083cc4ed026fdbab22482b97dbd1ab8e9e41165b5fbc966f364a2874038c838e.png" title=" Visitante de Transportes Sofka enters '' into Campo tel&Atilde;&copy;fono (completed)" width="1920"/>
+                <img src="083cc4ed026fdbab22482b97dbd1ab8e9e41165b5fbc966f364a2874038c838e.png" title=" Visitante de Transportes Sofka enters '43254788' into Campo DNI" width="1920"/>
+                <img src="f834f8f83769c21f8982695eb2e167eb7200d81bda629c145c501d03a2b579b7.png" title=" Visitante de Transportes Sofka enters '43254788' into Campo DNI" width="1920"/>
+                <img src="6cfa297b3845d559b4e51f7038592399cf63eba5f1eb9fdd3e94d2d8b717745f.png" title=" Visitante de Transportes Sofka enters '43254788' into Campo DNI (completed)" width="1920"/>
+                <img src="6cfa297b3845d559b4e51f7038592399cf63eba5f1eb9fdd3e94d2d8b717745f.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="40fbbab0cb8c5d38c4ec343669ca15f2a3f9c9d41966a561fd3c6d428814836e.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar (completed)" width="1920"/>
+                <img src="8aebe772a7047ab1f2dc134fa36ee2386e83eb382808139dc47b99169883b149.png" title=" Y completo los campos de telefono '' con dni '43254788' (completed)" width="1920"/>
+                <img src="8aebe772a7047ab1f2dc134fa36ee2386e83eb382808139dc47b99169883b149.png" title=" Entonces podre visualizar un mensaje 'No debe estar vacio!'" width="1920"/>
+                <img src="8aebe772a7047ab1f2dc134fa36ee2386e83eb382808139dc47b99169883b149.png" title=" Then campos invalidos mensaje should be 'No debe estar vacio!'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" 3: Convertirse en conductor err&oacute;neo ({correo=marina.morales@hotmail.com, contrasenna=nyzsvunhu0rg, telefono=&quot;#ba31224, dni=15785412, mensaje=Dato no v&aacute;lido!})" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Dado que inicie sesion como usuario 'marina.morales@hotmail.com' con contrasenna 'nyzsvunhu0rg'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de transportes sofka abrir pagina inicial" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de Transportes Sofka opens the Pagina inicial" width="1920"/>
+                <img src="f1709c1d7d996336aba9c16f5f01dd69baff5e34a3c27f2cd707eb3cbe19805b.png" title=" Visitante de Transportes Sofka opens the Pagina inicial (completed)" width="1920"/>
+                <img src="0e512a067d16c517ce3138f4351e55826400213186e44eea68c894e6653d26bd.png" title=" Visitante de transportes sofka abrir pagina inicial (completed)" width="1920"/>
+                <img src="0e512a067d16c517ce3138f4351e55826400213186e44eea68c894e6653d26bd.png" title=" Visitante de transportes sofka ir a iniciar sesion" width="1920"/>
+                <img src="f283f5e18e3526932a42398dfe4e6e65d78c8d56d10c650806462695626ae76b.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="9a28da151f2219930d72f97373c6fe36459ea9c2c0512bdef2fb03b8699729bb.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de transportes sofka ir a iniciar sesion (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka enters 'marina.morales@hotmail.com' into Campo de correo del usuario" width="1920"/>
+                <img src="08941bde5ab8fa91c68ae38691f4ca0d07eb478e71fdb7a64a84afd56c2f810f.png" title=" Visitante de Transportes Sofka enters 'marina.morales@hotmail.com' into Campo de correo del usuario" width="1920"/>
+                <img src="1f93a3d229abe0e0784e866a7784d521aa6a49a9294a083adbeefbf6ec557f09.png" title=" Visitante de Transportes Sofka enters 'marina.morales@hotmail.com' into Campo de correo del usuario (completed)" width="1920"/>
+                <img src="1f93a3d229abe0e0784e866a7784d521aa6a49a9294a083adbeefbf6ec557f09.png" title=" Visitante de Transportes Sofka enters 'nyzsvunhu0rg' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="6ada11e50ac09a1a129c8aa0a728030196069f3a5977f6e09d0892601cecf048.png" title=" Visitante de Transportes Sofka enters 'nyzsvunhu0rg' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="2c2a43954b4d4ccb1708ed87b40a104231110182ae70f7a9df2f39649adfaec7.png" title=" Visitante de Transportes Sofka enters 'nyzsvunhu0rg' into Campo de contrase&Atilde;&plusmn;a del usuario (completed)" width="1920"/>
+                <img src="2c2a43954b4d4ccb1708ed87b40a104231110182ae70f7a9df2f39649adfaec7.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="731788916817f7f5a406941eb5ab6ba0ec22c7e00e34a3650a111bb33609f161.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="c36906f4d8dd9ac25cd64d50593e258d45b51f491244f39528cc1108f0795fe7.png" title=" Dado que inicie sesion como usuario 'marina.morales@hotmail.com' con contrasenna 'nyzsvunhu0rg' (completed)" width="1920"/>
+                <img src="c36906f4d8dd9ac25cd64d50593e258d45b51f491244f39528cc1108f0795fe7.png" title=" Cuando accedo a la pagina de registro de conductor" width="1920"/>
+                <img src="c36906f4d8dd9ac25cd64d50593e258d45b51f491244f39528cc1108f0795fe7.png" title=" Visitante de transportes sofka ir a convertirse conductor" width="1920"/>
+                <img src="c36906f4d8dd9ac25cd64d50593e258d45b51f491244f39528cc1108f0795fe7.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor" width="1920"/>
+                <img src="0a9c1cb9b451595d3a68db78eba9b63e66fde27a7e99ceb81cfe9419faf22d6d.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor (completed)" width="1920"/>
+                <img src="0a9c1cb9b451595d3a68db78eba9b63e66fde27a7e99ceb81cfe9419faf22d6d.png" title=" Visitante de transportes sofka ir a convertirse conductor (completed)" width="1920"/>
+                <img src="0a9c1cb9b451595d3a68db78eba9b63e66fde27a7e99ceb81cfe9419faf22d6d.png" title=" Cuando accedo a la pagina de registro de conductor (completed)" width="1920"/>
+                <img src="0a9c1cb9b451595d3a68db78eba9b63e66fde27a7e99ceb81cfe9419faf22d6d.png" title=" Y completo los campos de telefono '&quot;#ba31224' con dni '15785412'" width="1920"/>
+                <img src="0a9c1cb9b451595d3a68db78eba9b63e66fde27a7e99ceb81cfe9419faf22d6d.png" title=" Visitante de Transportes Sofka enters '&quot;#ba31224' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="a9a2614af211bac8afc211774d58c08575af9a8bc19d722967a4a7b37d297449.png" title=" Visitante de Transportes Sofka enters '&quot;#ba31224' into Campo tel&Atilde;&copy;fono (completed)" width="1920"/>
+                <img src="208c9d66125d1d6c8051cbc119a91f731ee795c9501eb0eec203e61998aba787.png" title=" Visitante de Transportes Sofka enters '15785412' into Campo DNI" width="1920"/>
+                <img src="bf1af39af9cdeb8c021563ff83070cc19291be5d54cdf81fc1be20fcbe4048dc.png" title=" Visitante de Transportes Sofka enters '15785412' into Campo DNI" width="1920"/>
+                <img src="4287ff0d0dc5adf93a37a71fe6e032a367400553de8db99731e56d8bbf1c90df.png" title=" Visitante de Transportes Sofka enters '15785412' into Campo DNI (completed)" width="1920"/>
+                <img src="2f7066bff8754a139b4b33046d0fa848d95497746db20f0668cb67c2c42e998a.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="280cc1ea512220378b953d27c7e40d46f03cec5f6a02d572dcdcd539b3c45b34.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="292e001c6c67b59710d1155a80fe84a01ff25048dd5410412536ce33691ba00b.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar (completed)" width="1920"/>
+                <img src="292e001c6c67b59710d1155a80fe84a01ff25048dd5410412536ce33691ba00b.png" title=" Y completo los campos de telefono '&quot;#ba31224' con dni '15785412' (completed)" width="1920"/>
+                <img src="292e001c6c67b59710d1155a80fe84a01ff25048dd5410412536ce33691ba00b.png" title=" Entonces podre visualizar un mensaje 'Dato no v&aacute;lido!'" width="1920"/>
+                <img src="292e001c6c67b59710d1155a80fe84a01ff25048dd5410412536ce33691ba00b.png" title=" Then campos invalidos mensaje should be 'Dato no v&amp;aacute;lido!'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" 4: Convertirse en conductor err&oacute;neo ({correo=javier.ordonez@prodigy.net.mx, contrasenna=1b9kreuv11, telefono=32014, dni=95784577, mensaje=Muy corto!})" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Dado que inicie sesion como usuario 'javier.ordonez@prodigy.net.mx' con contrasenna '1b9kreuv11'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de transportes sofka abrir pagina inicial" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de Transportes Sofka opens the Pagina inicial" width="1920"/>
+                <img src="06e66c5da52deebd844dc9acf8a725b1d9edc42d5ea380b73b6198b4762917a5.png" title=" Visitante de Transportes Sofka opens the Pagina inicial (completed)" width="1920"/>
+                <img src="06e66c5da52deebd844dc9acf8a725b1d9edc42d5ea380b73b6198b4762917a5.png" title=" Visitante de transportes sofka abrir pagina inicial (completed)" width="1920"/>
+                <img src="191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png" title=" Visitante de transportes sofka ir a iniciar sesion" width="1920"/>
+                <img src="191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="54a5b0ce22df6f0a2775b213143e83f96dcf1b3fdc17151d5f959384c5b217a9.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de transportes sofka ir a iniciar sesion (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka enters 'javier.ordonez@prodigy.net.mx' into Campo de correo del usuario" width="1920"/>
+                <img src="04d9778371d39bd0dcdbd93c6a18ff4b66c395456e1cd4a0a56b495a6a54a98b.png" title=" Visitante de Transportes Sofka enters 'javier.ordonez@prodigy.net.mx' into Campo de correo del usuario" width="1920"/>
+                <img src="c9e56e5157e37500212e239a3d9dfb004ef5a345412afebd8db3948a675586d2.png" title=" Visitante de Transportes Sofka enters 'javier.ordonez@prodigy.net.mx' into Campo de correo del usuario (completed)" width="1920"/>
+                <img src="c9e56e5157e37500212e239a3d9dfb004ef5a345412afebd8db3948a675586d2.png" title=" Visitante de Transportes Sofka enters '1b9kreuv11' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="81ce57a5a72c4084097cded13732d08fe90703a64c887c2cf1e240600d07535c.png" title=" Visitante de Transportes Sofka enters '1b9kreuv11' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="57d870c28ab2f4147d4dac0df037a9c6e27df17ec50d362ddfc023912e05cac8.png" title=" Visitante de Transportes Sofka enters '1b9kreuv11' into Campo de contrase&Atilde;&plusmn;a del usuario (completed)" width="1920"/>
+                <img src="57d870c28ab2f4147d4dac0df037a9c6e27df17ec50d362ddfc023912e05cac8.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="be72bcd6c8e06c6ca06e0d73da1e82c6dc603c357cbfee527d1f5e696ee56ff6.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="8ec04d32d0b9eb3cdc44fe56d6611df5431fd289b5cab7a68158a256b1c1baaa.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="ed7873504b7414518f08279a89aec9264013d873b6b038610bf178ffb7b8b61d.png" title=" Dado que inicie sesion como usuario 'javier.ordonez@prodigy.net.mx' con contrasenna '1b9kreuv11' (completed)" width="1920"/>
+                <img src="ed7873504b7414518f08279a89aec9264013d873b6b038610bf178ffb7b8b61d.png" title=" Cuando accedo a la pagina de registro de conductor" width="1920"/>
+                <img src="ed7873504b7414518f08279a89aec9264013d873b6b038610bf178ffb7b8b61d.png" title=" Visitante de transportes sofka ir a convertirse conductor" width="1920"/>
+                <img src="ed7873504b7414518f08279a89aec9264013d873b6b038610bf178ffb7b8b61d.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor" width="1920"/>
+                <img src="1817cda089687b0803c6aba82b3b54379091db541b205fe529eee00e4b3810a2.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor (completed)" width="1920"/>
+                <img src="1817cda089687b0803c6aba82b3b54379091db541b205fe529eee00e4b3810a2.png" title=" Visitante de transportes sofka ir a convertirse conductor (completed)" width="1920"/>
+                <img src="1817cda089687b0803c6aba82b3b54379091db541b205fe529eee00e4b3810a2.png" title=" Cuando accedo a la pagina de registro de conductor (completed)" width="1920"/>
+                <img src="1817cda089687b0803c6aba82b3b54379091db541b205fe529eee00e4b3810a2.png" title=" Y completo los campos de telefono '32014' con dni '95784577'" width="1920"/>
+                <img src="1817cda089687b0803c6aba82b3b54379091db541b205fe529eee00e4b3810a2.png" title=" Visitante de Transportes Sofka enters '32014' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="a802e8cba54de2598d9d37d2f71da228d2b6610aae7ac5e308e4aaa5d40ba42f.png" title=" Visitante de Transportes Sofka enters '32014' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="e64669b099c2d9cc2e3e5609025b5e7d71f5be60b4266e16c54936d5d7820997.png" title=" Visitante de Transportes Sofka enters '32014' into Campo tel&Atilde;&copy;fono (completed)" width="1920"/>
+                <img src="e64669b099c2d9cc2e3e5609025b5e7d71f5be60b4266e16c54936d5d7820997.png" title=" Visitante de Transportes Sofka enters '95784577' into Campo DNI" width="1920"/>
+                <img src="bc5f7b87cb647e3e77afa7aca87668f2121ee46583363f5271ca3c81ac59ad64.png" title=" Visitante de Transportes Sofka enters '95784577' into Campo DNI" width="1920"/>
+                <img src="4fd98933b9023c370ce842e7b3d8f5f3b46594cc153ea11b83ca8e0431d1ae6d.png" title=" Visitante de Transportes Sofka enters '95784577' into Campo DNI (completed)" width="1920"/>
+                <img src="4fd98933b9023c370ce842e7b3d8f5f3b46594cc153ea11b83ca8e0431d1ae6d.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="8bc649216bf3a5e9f74efb487e398a2f847c1e14cacb67cb14bf51e6fd900372.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar (completed)" width="1920"/>
+                <img src="89b8514b3c0e1f3dd28fea62466b4a595bb67a212c634483f7f154fdb9733ef6.png" title=" Y completo los campos de telefono '32014' con dni '95784577' (completed)" width="1920"/>
+                <img src="89b8514b3c0e1f3dd28fea62466b4a595bb67a212c634483f7f154fdb9733ef6.png" title=" Entonces podre visualizar un mensaje 'Muy corto!'" width="1920"/>
+                <img src="89b8514b3c0e1f3dd28fea62466b4a595bb67a212c634483f7f154fdb9733ef6.png" title=" Then campos invalidos mensaje should be 'Muy corto!'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" 5: Convertirse en conductor err&oacute;neo ({correo=estela.lugo@prodigy.net.mx, contrasenna=kqp754higq5vea, telefono=320146487, dni=34587, mensaje=Muy corto!})" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Dado que inicie sesion como usuario 'estela.lugo@prodigy.net.mx' con contrasenna 'kqp754higq5vea'" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de transportes sofka abrir pagina inicial" width="1920"/>
+                <img src="b33a2716edefc3d9446a69ab9978ff5d93c7843a6a630fbaf299c28aaeea7ad8.png" title=" Visitante de Transportes Sofka opens the Pagina inicial" width="1920"/>
+                <img src="413b7a3df7cffb7a85b9376b390525bec6f5a880fb3d722803883ed45c589c78.png" title=" Visitante de Transportes Sofka opens the Pagina inicial (completed)" width="1920"/>
+                <img src="413b7a3df7cffb7a85b9376b390525bec6f5a880fb3d722803883ed45c589c78.png" title=" Visitante de transportes sofka abrir pagina inicial (completed)" width="1920"/>
+                <img src="191fe875137517503f8160fa5c2f3d6dfd942645370ac84de8947984b87032d6.png" title=" Visitante de transportes sofka ir a iniciar sesion" width="1920"/>
+                <img src="f283f5e18e3526932a42398dfe4e6e65d78c8d56d10c650806462695626ae76b.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="9a28da151f2219930d72f97373c6fe36459ea9c2c0512bdef2fb03b8699729bb.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de transportes sofka ir a iniciar sesion (completed)" width="1920"/>
+                <img src="dc24cf1d6a9ab0a96996fe84d5c9fdeaf7aa8b39d400a3f5871395c3c37b77d1.png" title=" Visitante de Transportes Sofka enters 'estela.lugo@prodigy.net.mx' into Campo de correo del usuario" width="1920"/>
+                <img src="7a1b06c8e863e08a4ce60e5fcb0013fc7566d822b69ccca20f2b1ed64be35ff7.png" title=" Visitante de Transportes Sofka enters 'estela.lugo@prodigy.net.mx' into Campo de correo del usuario" width="1920"/>
+                <img src="6d876a61ba2fc5be753f3aac1a6b32a60af72a537414f294e2d1b91b31d8be05.png" title=" Visitante de Transportes Sofka enters 'estela.lugo@prodigy.net.mx' into Campo de correo del usuario (completed)" width="1920"/>
+                <img src="6d876a61ba2fc5be753f3aac1a6b32a60af72a537414f294e2d1b91b31d8be05.png" title=" Visitante de Transportes Sofka enters 'kqp754higq5vea' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="51eb9620e06f5c8386cc9beaf11ba69467268fc1a14793b90655b6d25e949933.png" title=" Visitante de Transportes Sofka enters 'kqp754higq5vea' into Campo de contrase&Atilde;&plusmn;a del usuario" width="1920"/>
+                <img src="f3d9caf2832cfe08caba4fe6cdc371d9266896852bd92cf11443bf80bef26a26.png" title=" Visitante de Transportes Sofka enters 'kqp754higq5vea' into Campo de contrase&Atilde;&plusmn;a del usuario (completed)" width="1920"/>
+                <img src="f3d9caf2832cfe08caba4fe6cdc371d9266896852bd92cf11443bf80bef26a26.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="e2d7fff92d2eb5f9b87de240b2224ea658bf88c99e03acdf69c7de1428dd2616.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n de Iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="e56222f709cb66156fb90864372c7b9a17ce73ec15caeda26d0dcc684268f6c4.png" title=" Dado que inicie sesion como usuario 'estela.lugo@prodigy.net.mx' con contrasenna 'kqp754higq5vea' (completed)" width="1920"/>
+                <img src="e56222f709cb66156fb90864372c7b9a17ce73ec15caeda26d0dcc684268f6c4.png" title=" Cuando accedo a la pagina de registro de conductor" width="1920"/>
+                <img src="e56222f709cb66156fb90864372c7b9a17ce73ec15caeda26d0dcc684268f6c4.png" title=" Visitante de transportes sofka ir a convertirse conductor" width="1920"/>
+                <img src="e56222f709cb66156fb90864372c7b9a17ce73ec15caeda26d0dcc684268f6c4.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor" width="1920"/>
+                <img src="1bde894792bce4a9eeba10c8c1524451df691df431f6cc99a40833e6bfa7439d.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n convertirse en conductor (completed)" width="1920"/>
+                <img src="1bde894792bce4a9eeba10c8c1524451df691df431f6cc99a40833e6bfa7439d.png" title=" Visitante de transportes sofka ir a convertirse conductor (completed)" width="1920"/>
+                <img src="1bde894792bce4a9eeba10c8c1524451df691df431f6cc99a40833e6bfa7439d.png" title=" Cuando accedo a la pagina de registro de conductor (completed)" width="1920"/>
+                <img src="1bde894792bce4a9eeba10c8c1524451df691df431f6cc99a40833e6bfa7439d.png" title=" Y completo los campos de telefono '320146487' con dni '34587'" width="1920"/>
+                <img src="1bde894792bce4a9eeba10c8c1524451df691df431f6cc99a40833e6bfa7439d.png" title=" Visitante de Transportes Sofka enters '320146487' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="b6be347452a137f10cfb5cd9bcce37d789d877e9991b89ffc85d5e16056b25ac.png" title=" Visitante de Transportes Sofka enters '320146487' into Campo tel&Atilde;&copy;fono" width="1920"/>
+                <img src="1a2884d4ed6fc931752d235ef19102d6d79d1653b608075615f7c233dcd961f9.png" title=" Visitante de Transportes Sofka enters '320146487' into Campo tel&Atilde;&copy;fono (completed)" width="1920"/>
+                <img src="1a2884d4ed6fc931752d235ef19102d6d79d1653b608075615f7c233dcd961f9.png" title=" Visitante de Transportes Sofka enters '34587' into Campo DNI" width="1920"/>
+                <img src="8b7c018420d56ab6e71dba6337e02a2b961c20bd29e73219d8bfa289858022be.png" title=" Visitante de Transportes Sofka enters '34587' into Campo DNI" width="1920"/>
+                <img src="03d242d3500e55a498c18ae53657db2d38c57042e0805c8479a23aeb2276610e.png" title=" Visitante de Transportes Sofka enters '34587' into Campo DNI (completed)" width="1920"/>
+                <img src="03d242d3500e55a498c18ae53657db2d38c57042e0805c8479a23aeb2276610e.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="ceba3bf38f384befb701fcad84815d18763761261dc73f5d6a85e7b62807f46c.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar" width="1920"/>
+                <img src="c8f5c8e9960911a58e6ac799c5d03033934de622694cedf0996d99cf847475f0.png" title=" Visitante de Transportes Sofka clicks on Bot&Atilde;&sup3;n actualizar (completed)" width="1920"/>
+                <img src="c8f5c8e9960911a58e6ac799c5d03033934de622694cedf0996d99cf847475f0.png" title=" Y completo los campos de telefono '320146487' con dni '34587' (completed)" width="1920"/>
+                <img src="c8f5c8e9960911a58e6ac799c5d03033934de622694cedf0996d99cf847475f0.png" title=" Entonces podre visualizar un mensaje 'Muy corto!'" width="1920"/>
+                <img src="c8f5c8e9960911a58e6ac799c5d03033934de622694cedf0996d99cf847475f0.png" title=" Then campos invalidos mensaje should be 'Muy corto!': <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.23</span>
+</div>
+</body>
+</html>
