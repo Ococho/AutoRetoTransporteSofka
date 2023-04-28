@@ -5,6 +5,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
@@ -17,8 +18,10 @@ import static com.sofkau.tasks.frontend.ConvertirseConductor.convertirseConducto
 import static com.sofkau.tasks.frontend.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.frontend.IrAConvertirseConductor.irAConvertirseConductor;
 import static com.sofkau.tasks.frontend.IrAIniciarSesion.irAIniciarSesion;
+import static com.sofkau.ui.PaginaPrincipal.BIENVENIDA;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static org.hamcrest.Matchers.equalTo;
 
 public class ConvertirseConductorStepDef extends WebSetup {
@@ -32,7 +35,8 @@ public class ConvertirseConductorStepDef extends WebSetup {
             theActorInTheSpotlight().wasAbleTo(
                     abrirPaginaInicial(),
                     irAIniciarSesion(),
-                    iniciarSesion("javier.cabrera@yahoo.com", "jqjmk6gf7w27cf")
+                    iniciarSesion("javier.cabrera@yahoo.com", "jqjmk6gf7w27cf"),
+                    WaitUntil.the(BIENVENIDA, isVisible())
             );
         } catch (Exception e) {
             log.error("ERROR");
@@ -102,7 +106,8 @@ public class ConvertirseConductorStepDef extends WebSetup {
             theActorInTheSpotlight().wasAbleTo(
                     abrirPaginaInicial(),
                     irAIniciarSesion(),
-                    iniciarSesion(correo, contrasenna)
+                    iniciarSesion(correo, contrasenna),
+                    WaitUntil.the(BIENVENIDA, isVisible())
             );
         } catch (Exception e) {
             log.error("ERROR");
